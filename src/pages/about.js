@@ -52,7 +52,7 @@ const AboutPage = ({ data }) => (
         </div>
       </div>
     </div>
-    <Newsletter />
+    {/*<Newsletter />*/}
   </Layout>
 )
 

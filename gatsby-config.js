@@ -15,10 +15,9 @@ module.exports = {
       { name: "About", to: "/about" },
     ],
     links: {
-      facebook: "https://www.facebook.com/",
-      instagram: "https://www.instagram.com/",
-      pinterest: "https://pinterest.com/",
-      twitter: "https://twitter.com/",
+      facebook: "https://www.facebook.com/ambientalist.tecnico",
+      instagram: "https://www.instagram.com/ambiental.ist/",
+      mail: "mailto:ambientalist.sa@aeist.pt",
     },
     locale: "en",
     title: `John Doe`,

@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
           <div className="container">No projects found.</div>
         )}
       </div>
-      <Newsletter />
+      {/*<Newsletter />*/}
     </Layout>
   )
 }
