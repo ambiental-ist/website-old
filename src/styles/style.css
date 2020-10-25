@@ -23,3 +23,11 @@ body {
     @apply .px-8;
   }
 }
+
+/* Custom CSS. */
+.green-color {
+  color: #58af00;
+}
+.border-green-color, .border-green-color:hover {
+  border-color:#58af00;
+}
