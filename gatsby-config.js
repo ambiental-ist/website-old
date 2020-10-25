@@ -11,8 +11,8 @@ if (!CONTENTFUL_SPACE_ID || !CONTENTFUL_ACCESS_TOKEN) {
 module.exports = {
   siteMetadata: {
     menu: [
-      { name: "Home", to: "/" },
-      { name: "About", to: "/about" },
+      { name: "Início", to: "/" },
+      { name: "Sobre nós", to: "/about" },
     ],
     links: {
       facebook: "https://www.facebook.com/ambientalist.tecnico",

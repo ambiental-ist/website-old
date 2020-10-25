@@ -25,9 +25,15 @@ body {
 }
 
 /* Custom CSS. */
-.green-color {
+.text-green-color {
   color: #58af00;
 }
-.border-green-color, .border-green-color:hover {
+.text-green-color-hover:hover {
+  color: #58af00;
+}
+.border-green-color {
+  border-color:#58af00;
+}
+.border-green-color-hover:hover {
   border-color:#58af00;
 }
