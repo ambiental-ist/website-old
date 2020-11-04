@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
 import Layout from "../layouts/Layout"
-import Newsletter from "../components/Newsletter"
+// import Newsletter from "../components/Newsletter"
 import SiteMetadata from "../components/SiteMetadata"
 
 const AboutPage = ({ data }) => (
@@ -35,29 +35,26 @@ const AboutPage = ({ data }) => (
             </div>
           </div>
           <div className="w-full md:w-1/2 xl:w-2/5 md:pl-12">
-            <Img
-              fluid={data.author.childImageSharp.fluid}
-              alt="John Doe"
-              className="rounded-md shadow-md"
-            />
+            <img alt="Logo" src="logo_small.png" />
           </div>
         </div>
       </div>
     </div>
+
     {/*<Newsletter />*/}
   </Layout>
 )
 
 export default AboutPage
 
-export const query = graphql`
-  query {
-    author: file(relativePath: { eq: "author.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 600, maxHeight: 480, quality: 85) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     author: file(relativePath: { eq: "author.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 600, maxHeight: 480, quality: 85) {
+//           ...GatsbyImageSharpFluid_withWebp
+//         }
+//       }
+//     }
+//   }
+// `

@@ -75,6 +75,23 @@ export default props => {
 }
 
 export const query = graphql`
+
+  fragment PortfolioCard on ContentfulPortfolio {
+    id
+    name
+    slug
+    thumbnail {
+      localFile {
+        childImageSharp {
+          fluid(maxWidth: 444, maxHeight: 342, quality: 85) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+    summary
+  }
+
   query PortfolioItemQUery($slug: String!) {
     item: contentfulPortfolio(slug: { eq: $slug }) {
       description {

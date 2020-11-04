@@ -32,6 +32,11 @@ exports.createPages = ({ graphql, actions }) => {
             slug
           }
         }
+        event: allContentfulEvent {
+          nodes {
+            slug
+          }
+        }
       }
     `).then(({ errors, data }) => {
       if (errors) {
@@ -41,6 +46,18 @@ exports.createPages = ({ graphql, actions }) => {
       if (data && data.portfolio) {
         const component = path.resolve("./src/templates/portfolio-item.jsx")
         data.portfolio.nodes.map(({ slug }) => {
+          createPage({
+            path: `/${slug}`,
+            component,
+            context: { slug },
+          })
+        })
+      }
+
+      // Event page.
+      if (data && data.event) {
+        const component = path.resolve("./src/templates/event-item.jsx")
+        data.event.nodes.map(({ slug }) => {
           createPage({
             path: `/${slug}`,
             component,
