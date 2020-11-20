@@ -11,6 +11,7 @@ import Layout from "../layouts/Layout"
 import { Block, BLOCKS, Document, Inline, INLINES, MARKS, Text } from '@contentful/rich-text-types';
 
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 
 const options = {
@@ -22,18 +23,10 @@ const options = {
     [BLOCKS.HEADING_5]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
     [BLOCKS.HEADING_6]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
     [BLOCKS.UL_LIST]: (node, children) => <ul className='list-disc pl-8'>{children}</ul>,
-    [BLOCKS.EMBEDDED_ASSET]: (node, children) => defaultInline(node, children),
-    [INLINES.HYPERLINK]: (node, children) => <a href={node.data.uri} className='font-bold'>{children}</a>,  
+    [INLINES.HYPERLINK]: (node, children) => <a href={node.data.uri} className='font-bold'>{children}</a>,
   }
 };
 
-function defaultInline(node, children) {
-  console.log(node);
-  console.log(children);
-  return (
-    <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-  );
-}
 
 export default props => {
   const {
@@ -66,7 +59,7 @@ export default props => {
                 {title}
               </h1>
               <h2 className="text-xl leading-tight font-semibold tracking-tight text-gray-600 sm:text-2xl">
-                Webinar
+                {type}
               </h2>
               <div className="mt-4 leading-loose">
                 {summary}
@@ -81,7 +74,7 @@ export default props => {
           <div className="flex justify-center flex-wrap">
             <div className="max-w-2xl pb-8">
               <div className="mt-4 leading-loose">
-                {documentToReactComponents(text.json, options)}
+                {renderRichText(text, options)}
               </div>
             </div>
           </div>
@@ -126,8 +119,7 @@ export const query = graphql`
       author
       type
       text {
-        id
-        json
+        raw
       }
     }
   }
