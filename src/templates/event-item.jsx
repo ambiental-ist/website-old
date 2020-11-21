@@ -95,6 +95,7 @@ export const query = graphql`
     id
     slug
     title
+    type
     thumbnail {
       localFile {
         childImageSharp {

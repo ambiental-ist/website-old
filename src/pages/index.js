@@ -42,10 +42,10 @@ const IndexPage = ({ data }) => {
           <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-2">
             Eventos
           </h1>
-          {data.portfolio && data.portfolio.nodes.length > 0 ? (
-            <Cards items={data.portfolio.nodes} />
+          {data.event && data.event.nodes.length > 0 ? (
+            <Cards items={data.event.nodes} />
           ) : (
-            <div className="container">No projects found.</div>
+            <div className="container">No events found.</div>
           )}
         </div>
       </div>
@@ -56,8 +56,8 @@ const IndexPage = ({ data }) => {
           <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-2">
             Entrevistas
           </h1>
-          {data.portfolio && data.portfolio.nodes.length > 0 ? (
-            <Cards items={data.portfolio.nodes} />
+          {data.event && data.event.nodes.length > 0 ? (
+            <Cards items={data.event.nodes} />
           ) : (
             <div className="container">No projects found.</div>
           )}
@@ -81,12 +81,12 @@ export const query = graphql`
       }
     },
 
-    event: allContentfulEvent {
+    event: allContentfulEvent(sort: {fields: date, order: DESC}, limit: 3) {
       nodes {
-        id
+        ...Event
       }
     },
-
+    
     home_page_photo: file(relativePath: { eq: "trees.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600, maxHeight: 480, quality: 90) {
