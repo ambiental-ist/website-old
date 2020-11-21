@@ -66,7 +66,7 @@ export default props => {
                   {date}
                 </h5>
               )}
-              <div className="mt-6 leading-loose">
+              <div className="my-4 text-base text-gray-600 whitespace-pre-line">
                 {summary}
               </div>
             </div>
