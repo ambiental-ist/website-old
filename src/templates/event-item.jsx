@@ -1,17 +1,11 @@
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import React, { ReactNode } from "react"
+import React from "react"
 import SiteMetadata from "../components/SiteMetadata"
-import Button from "../components/Button"
-import Cards from "../components/Cards"
-import Carousel from "../components/Carousel"
-import Newsletter from "../components/Newsletter"
 import Layout from "../layouts/Layout"
 
-import { Block, BLOCKS, Document, Inline, INLINES, MARKS, Text } from '@contentful/rich-text-types';
-
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
+import { BLOCKS, INLINES} from '@contentful/rich-text-types';
 
 
 const options = {
