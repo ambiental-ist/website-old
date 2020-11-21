@@ -58,10 +58,21 @@ export default props => {
               <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-1">
                 {title}
               </h1>
-              <h2 className="text-xl leading-tight font-semibold tracking-tight text-gray-600 sm:text-2xl">
-                {type}
-              </h2>
-              <div className="mt-4 leading-loose">
+              { type &&
+                <h2 className="text-xl leading-tight font-semibold tracking-tight text-gray-600 sm:text-2xl">
+                  {type}
+                </h2>
+              }
+              {author ? (
+                <h5 className="mt-1 text-sm leading-tight tracking-tight text-gray-600">
+                  {author} · {date}
+                </h5>
+              ) : (
+                <h5 className="mt-1 text-sm leading-tight tracking-tight text-gray-600">
+                  {date}
+                </h5>
+              )}
+              <div className="mt-6 leading-loose">
                 {summary}
               </div>
             </div>
