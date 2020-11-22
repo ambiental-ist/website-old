@@ -1,9 +1,10 @@
 import Img from "gatsby-image"
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
 const Card = props => {
+
   const { title, slug, type, thumbnail } = props
 
   return (
@@ -21,6 +22,7 @@ const Card = props => {
       </Link>
     </div>
   )
+
 }
 
 Card.propTypes = {

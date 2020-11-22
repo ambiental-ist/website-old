@@ -3,8 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import Card from "./Card"
 
-const Cards = ({ items, hideLastItemOnMobile = false }) => {
+const Cards = ({ items, hideLastItemOnMobile = true }) => {
+
   return (
+
     <div className="flex flex-wrap -mx-3 lg:-mx-6">
       {items.map(item => (
         <div
@@ -18,6 +20,7 @@ const Cards = ({ items, hideLastItemOnMobile = false }) => {
       ))}
     </div>
   )
+
 }
 
 Cards.propTypes = {

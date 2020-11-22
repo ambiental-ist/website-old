@@ -92,7 +92,7 @@ export default props => {
 
 export const query = graphql`
 
-  fragment Event on ContentfulEvent {
+  fragment EventCard on ContentfulEvent {
     id
     slug
     title

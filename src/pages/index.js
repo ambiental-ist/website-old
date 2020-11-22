@@ -1,11 +1,10 @@
 import { graphql } from "gatsby"
 import React from "react"
-import Cards from "../components/Cards"
 import Img from "gatsby-image"
-// import Hero from "../components/Hero"
-import Layout from "../layouts/Layout"
-// import Newsletter from "../components/Newsletter"
+
 import SiteMetadata from "../components/SiteMetadata"
+import Layout from "../layouts/Layout"
+import Cards from "../components/Cards"
 
 const IndexPage = ({ data }) => {
   return (
@@ -36,7 +35,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
 
-      {/* Eventos. */}
+      {/* Events cards section. */}
       <div className="bg-gray-0 py-12 lg:py-16">
         <div className="container">
           <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-2">
@@ -50,7 +49,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
 
-      {/* Entrevistas. 
+      {/* Interviews cards section. 
       <div className="bg-gray-100 py-12 lg:py-16">
         <div className="container">
           <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-2">
@@ -83,7 +82,7 @@ export const query = graphql`
 
     event: allContentfulEvent(sort: {fields: date, order: DESC}, limit: 3) {
       nodes {
-        ...Event
+        ...EventCard
       }
     },
     
