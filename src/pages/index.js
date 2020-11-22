@@ -1,5 +1,5 @@
-import { graphql } from "gatsby"
 import React from "react"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import SiteMetadata from "../components/SiteMetadata"
@@ -7,6 +7,7 @@ import Layout from "../layouts/Layout"
 import Cards from "../components/Cards"
 
 const IndexPage = ({ data }) => {
+
   return (
     <Layout>
 
@@ -67,6 +68,7 @@ const IndexPage = ({ data }) => {
 
     </Layout>
   )
+
 }
 
 export default IndexPage
@@ -74,11 +76,6 @@ export default IndexPage
 export const query = graphql`
 
   query HomeQuery {
-    portfolio: allContentfulPortfolio {
-      nodes {
-        ...PortfolioCard
-      }
-    },
 
     event: allContentfulEvent(sort: {fields: date, order: DESC}, limit: 3) {
       nodes {
@@ -93,5 +90,6 @@ export const query = graphql`
         }
       }
     }
+
   }
 `

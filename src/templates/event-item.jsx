@@ -1,26 +1,10 @@
+import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import React from "react"
+
 import SiteMetadata from "../components/SiteMetadata"
 import Layout from "../layouts/Layout"
-
-import { renderRichText } from "gatsby-source-contentful/rich-text"
-import { BLOCKS, INLINES} from '@contentful/rich-text-types';
-
-
-const options = {
-  renderNode: {
-    [BLOCKS.HEADING_1]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
-    [BLOCKS.HEADING_2]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
-    [BLOCKS.HEADING_3]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
-    [BLOCKS.HEADING_4]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
-    [BLOCKS.HEADING_5]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
-    [BLOCKS.HEADING_6]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
-    [BLOCKS.UL_LIST]: (node, children) => <ul className='list-disc pl-8'>{children}</ul>,
-    [INLINES.HYPERLINK]: (node, children) => <a href={node.data.uri} className='font-bold'>{children}</a>,
-  }
-};
-
+import RichText from "../components/RichText"
 
 export default props => {
   const {
@@ -34,12 +18,16 @@ export default props => {
   } = props.data.item
 
   return (
+
     <Layout>
+
       <SiteMetadata
         title={title}
         description={summary}
         image={thumbnail.localFile.publicURL}
       />
+
+      {/* Top section. */}
       <div className="bg-gray-100 py-12 lg:py-16">
         <div className="container">
           <div className="flex flex-wrap">
@@ -75,19 +63,22 @@ export default props => {
         </div>
       </div>
 
+      {/* Rich text section. */}
       <div className="bg-gray-0 py-12 lg:py-16">
         <div className="container">
           <div className="flex justify-center flex-wrap">
             <div className="max-w-2xl pb-8">
-              <div className="mt-4 leading-loose">
-                {renderRichText(text, options)}
-              </div>
+
+              <RichText text={text}/>
+
             </div>
           </div>
         </div>
       </div>
+
     </Layout>
   )
+
 }
 
 export const query = graphql`
