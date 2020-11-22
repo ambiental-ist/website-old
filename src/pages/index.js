@@ -50,7 +50,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
 
-      {/* Entrevistas. */}
+      {/* Entrevistas. 
       <div className="bg-gray-100 py-12 lg:py-16">
         <div className="container">
           <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-2">
@@ -62,7 +62,7 @@ const IndexPage = ({ data }) => {
             <div className="container">No projects found.</div>
           )}
         </div>
-      </div>
+      </div> */}
 
       {/*<Newsletter />*/}
 

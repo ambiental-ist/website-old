@@ -37,6 +37,7 @@ export default props => {
     <Layout>
       <SiteMetadata
         title={title}
+        description={summary}
         image={thumbnail.localFile.publicURL}
       />
       <div className="bg-gray-100 py-12 lg:py-16">
