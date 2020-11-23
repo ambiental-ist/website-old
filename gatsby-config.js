@@ -13,7 +13,7 @@ module.exports = {
     menu: [
       { name: "Início", to: "/" },
       { name: "Sobre nós", to: "/about" },
-      { name: "Eventos", to: "/events" },
+      { name: "Iniciativas", to: "/initiatives" },
     ],
     links: {
       facebook: "https://www.facebook.com/ambientalist.tecnico",

@@ -36,14 +36,14 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
 
-      {/* Events cards section. */}
+      {/* Initiatives cards section. */}
       <div className="bg-gray-0 py-12 lg:py-16">
         <div className="container">
           <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-2">
-            Eventos
+            Iniciativas
           </h1>
-          {data.event && data.event.nodes.length > 0 ? (
-            <Cards items={data.event.nodes} />
+          {data.initiative && data.initiative.nodes.length > 0 ? (
+            <Cards items={data.initiative.nodes} />
           ) : (
             <div className="container">No events found.</div>
           )}
@@ -77,9 +77,9 @@ export const query = graphql`
 
   query HomeQuery {
 
-    event: allContentfulEvent(sort: {fields: date, order: DESC}, limit: 3) {
+    initiative: allContentfulInitiative(sort: {fields: date, order: DESC}, limit: 3) {
       nodes {
-        ...EventCard
+        ...InitiativeCard
       }
     },
     

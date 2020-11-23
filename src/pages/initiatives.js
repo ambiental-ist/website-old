@@ -3,16 +3,16 @@ import { graphql } from "gatsby"
 
 import Layout from "../layouts/Layout"
 import SiteMetadata from "../components/SiteMetadata"
-import EventSection from "../components/EventSection"
+import EventSection from "../components/EventSection" // TODO.
 
 const IndexPage = ({ data }) => {
 
   return (
     <Layout>
 
-      <SiteMetadata title="Eventos" description="Grupo de estudantes do Instituto Superior Técnico." />
+      <SiteMetadata title="Iniciativas" description="Grupo de estudantes do Instituto Superior Técnico." />
       
-      {data.event.nodes.map((element, idx )=> (
+      {data.initiative.nodes.map((element, idx )=> (
         <EventSection title={element.title}
                    thumbnail={element.thumbnail}
                    type={element.type}
@@ -31,9 +31,9 @@ export default IndexPage
 
 export const query = graphql`
 
-  query EventsPageQuery {
+  query InitiativesPageQuery {
 
-    event: allContentfulEvent(sort: {fields: date, order: DESC}) {
+    initiative: allContentfulInitiative(sort: {fields: date, order: DESC}) {
       nodes {
         id
         slug

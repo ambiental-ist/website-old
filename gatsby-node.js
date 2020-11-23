@@ -32,7 +32,7 @@ exports.createPages = ({ graphql, actions }) => {
             slug
           }
         }
-        event: allContentfulEvent {
+        initiative: allContentfulInitiative {
           nodes {
             slug
           }
@@ -54,10 +54,10 @@ exports.createPages = ({ graphql, actions }) => {
         })
       }
 
-      // Event page.
-      if (data && data.event) {
-        const component = path.resolve("./src/templates/event-item.jsx")
-        data.event.nodes.map(({ slug }) => {
+      // Initiative page.
+      if (data && data.initiative) {
+        const component = path.resolve("./src/templates/initiative-item.jsx")
+        data.initiative.nodes.map(({ slug }) => {
           createPage({
             path: `/${slug}`,
             component,

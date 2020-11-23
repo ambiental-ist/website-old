@@ -5,6 +5,8 @@ import Img from "gatsby-image"
 import SiteMetadata from "../components/SiteMetadata"
 import Layout from "../layouts/Layout"
 import RichText from "../components/RichText"
+import Cards from "../components/Cards"
+
 
 export default props => {
   const {
@@ -14,7 +16,8 @@ export default props => {
     summary,
     author,
     type,
-    text
+    text,
+    related
   } = props.data.item
 
   return (
@@ -76,6 +79,19 @@ export default props => {
         </div>
       </div>
 
+      {/* Related section. */}
+      {related && (
+        <div className="bg-gray-100 py-12 lg:py-16">
+          <div className="container">
+            <h2 className="text-3xl sm:text-4xl leading-tight font-extrabold tracking-tight text-gray-900 mb-8">
+              Ver mais
+            </h2>
+            <Cards items={related} hideLastItemOnMobile={true} />
+          </div>
+        </div>
+      )}
+
+
     </Layout>
   )
 
@@ -83,7 +99,7 @@ export default props => {
 
 export const query = graphql`
 
-  fragment EventCard on ContentfulEvent {
+  fragment InitiativeCard on ContentfulInitiative {
     id
     slug
     title
@@ -99,8 +115,8 @@ export const query = graphql`
     }
   }
 
-  query EventItemQuery($slug: String!) {
-    item: contentfulEvent(slug: { eq: $slug }) {
+  query InitiativeItemQuery($slug: String!) {
+    item: contentfulInitiative(slug: { eq: $slug }) {
       id
       title
       date
@@ -118,6 +134,9 @@ export const query = graphql`
       type
       text {
         raw
+      }
+      related {
+        ...InitiativeCard
       }
     }
   }

@@ -7,6 +7,7 @@ import { BLOCKS, INLINES} from '@contentful/rich-text-types';
 
 const options = {
   renderNode: {
+    [BLOCKS.PARAGRAPH]: (node, children) => <p className='pb-5'>{children}</p>,
     [BLOCKS.HEADING_1]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
     [BLOCKS.HEADING_2]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
     [BLOCKS.HEADING_3]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
