@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
                    type={element.type}
                    summary={element.summary}
                    slug={element.slug}
-                   isBackgroundGray={(idx % 2 == 0)}/>
+                   isBackgroundGray={(idx % 2 === 0)}/>
       ))}
     
     </Layout>

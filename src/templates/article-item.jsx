@@ -99,7 +99,7 @@ export default props => {
 
 export const query = graphql`
 
-  fragment InitiativeCard on ContentfulInitiative {
+  fragment ArticleCard on ContentfulArticle {
     id
     slug
     title
@@ -115,8 +115,8 @@ export const query = graphql`
     }
   }
 
-  query InitiativeItemQuery($slug: String!) {
-    item: contentfulInitiative(slug: { eq: $slug }) {
+  query ArticleItemQuery($slug: String!) {
+    item: contentfulArticle(slug: { eq: $slug }) {
       id
       title
       date
@@ -130,6 +130,7 @@ export const query = graphql`
           }
       }
       summary
+      author
       type
       text {
         raw

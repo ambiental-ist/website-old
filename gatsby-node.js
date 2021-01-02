@@ -1,38 +1,17 @@
 const path = require(`path`)
 
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
-  const typeDefs = `
-    type contentfulPortfolioDescriptionTextNode implements Node {
-      description: String
-    }
-    type ContentfulPortfolio implements Node {
-      description: contentfulPortfolioDescriptionTextNode
-      gallery: [ContentfulAsset]
-      id: ID!
-      name: String!
-      related: [ContentfulPortfolio]
-      slug: String!
-      summary: String!
-      thumbnail: ContentfulAsset
-      url: String
-    }
-  `
-  createTypes(typeDefs)
-}
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        portfolio: allContentfulPortfolio {
+        initiative: allContentfulInitiative {
           nodes {
             slug
           }
-        }
-        initiative: allContentfulInitiative {
+        },
+        article: allContentfulArticle {
           nodes {
             slug
           }
@@ -43,9 +22,10 @@ exports.createPages = ({ graphql, actions }) => {
         reject(errors)
       }
 
-      if (data && data.portfolio) {
-        const component = path.resolve("./src/templates/portfolio-item.jsx")
-        data.portfolio.nodes.map(({ slug }) => {
+      // Initiative page.
+      if (data && data.initiative) {
+        const component = path.resolve("./src/templates/initiative-item.jsx")
+        data.initiative.nodes.map(({ slug }) => {
           createPage({
             path: `/${slug}`,
             component,
@@ -55,9 +35,9 @@ exports.createPages = ({ graphql, actions }) => {
       }
 
       // Initiative page.
-      if (data && data.initiative) {
-        const component = path.resolve("./src/templates/initiative-item.jsx")
-        data.initiative.nodes.map(({ slug }) => {
+      if (data && data.article) {
+        const component = path.resolve("./src/templates/article-item.jsx")
+        data.article.nodes.map(({ slug }) => {
           createPage({
             path: `/${slug}`,
             component,

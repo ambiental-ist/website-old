@@ -20,7 +20,7 @@ module.exports = {
       instagram: "https://www.instagram.com/ambiental.ist/",
       mail: "mailto:ambientalist.sa@aeist.pt",
     },
-    locale: "en",
+    locale: "pt",
     title: `Ambientalist`,
     description: `Durante anos, o planeta chamou por nós, receou por nós, pediu-nos para que o escutássemos e nos sincronizássemos com ele, com a Natureza. Hoje, já não é apenas um pedido, mas uma necessidade, uma missão. Começando pela nossa universidade, o Instituto Superior Técnico, procuramos promover a adoção de comportamentos responsáveis e hábitos sustentáveis, que protejam o futuro da humanidade e do nosso planeta. Estás pronto para te juntares a nós?`,
     author: `@ambientalist`,
@@ -45,20 +45,20 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: "gatsby-plugin-mailchimp",
-      options: {
-        endpoint: process.env.MAILCHIMP_ENDPOINT,
-      },
-    },
+    //{
+    //  resolve: "gatsby-plugin-mailchimp",
+    //  options: {
+    //    endpoint: process.env.MAILCHIMP_ENDPOINT,
+    //  },
+    //},
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `John Doe`,
-        short_name: `johndoe`,
+        name: `AmbientalIST`,
+        short_name: `ambientalist`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#3182ce`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
