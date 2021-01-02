@@ -26,16 +26,16 @@ body {
 
 /* Custom CSS. */
 .text-green-color {
-  color: #62c102;
+  color: #62c103;
 }
 .text-green-color-hover:hover {
-  color: #62c102;
+  color: #62c103;
 }
 .border-green-color {
-  border-color:#62c102;
+  border-color:#62c103;
 }
 .border-green-color-hover:hover {
-  border-color:#62c102;
+  border-color:#62c103;
 }
 
 /* Quotes */
