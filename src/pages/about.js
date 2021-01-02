@@ -6,7 +6,7 @@ import SiteMetadata from "../components/SiteMetadata"
 const AboutPage = ({ data }) => (
 
   <Layout>
-    <SiteMetadata title="Sobre nós" description="Grupo de estudantes do Instituto Superior Técnico." />
+    <SiteMetadata title="Sobre nós" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
 
     <div className="bg-gray-100">
       <div className="container py-12 lg:pb-16">

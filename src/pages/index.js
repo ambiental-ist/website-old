@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
 
-      <SiteMetadata title="Início" description="Grupo de estudantes do Instituto Superior Técnico." />
+      <SiteMetadata title="Início" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
 
       {/* Home page banner. */}
       <div className="bg-gray-100">
@@ -45,24 +45,24 @@ const IndexPage = ({ data }) => {
           {data.initiative && data.initiative.nodes.length > 0 ? (
             <Cards items={data.initiative.nodes} />
           ) : (
-            <div className="container">No events found.</div>
+            <div className="container">No Initiatives found.</div>
           )}
         </div>
       </div>
 
-      {/* Interviews cards section. 
+      {/* Articles cards section. */ }
       <div className="bg-gray-100 py-12 lg:py-16">
         <div className="container">
           <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-2">
-            Entrevistas
+            Artigos
           </h1>
-          {data.event && data.event.nodes.length > 0 ? (
-            <Cards items={data.event.nodes} />
+          {data.article && data.article.nodes.length > 0 ? (
+            <Cards items={data.article.nodes} />
           ) : (
-            <div className="container">No projects found.</div>
+            <div className="container">No articles found.</div>
           )}
         </div>
-      </div> */}
+      </div>
 
       {/*<Newsletter />*/}
 
@@ -80,6 +80,12 @@ export const query = graphql`
     initiative: allContentfulInitiative(sort: {fields: date, order: DESC}, limit: 3) {
       nodes {
         ...InitiativeCard
+      }
+    },
+
+    article: allContentfulArticle(sort: {fields: date, order: DESC}, limit: 3) {
+      nodes {
+        ...ArticleCard
       }
     },
     

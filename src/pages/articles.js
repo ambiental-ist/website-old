@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
 
       <SiteMetadata title="Iniciativas" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
       
-      {data.initiative.nodes.map((element, idx )=> (
+      {data.article.nodes.map((element, idx )=> (
         <RowSection title={element.title}
                    thumbnail={element.thumbnail}
                    type={element.type}
@@ -31,9 +31,9 @@ export default IndexPage
 
 export const query = graphql`
 
-  query InitiativesPageQuery {
+  query ArticlesPageQuery {
 
-    initiative: allContentfulInitiative(sort: {fields: date, order: DESC}) {
+    article: allContentfulArticle(sort: {fields: date, order: DESC}) {
       nodes {
         id
         slug

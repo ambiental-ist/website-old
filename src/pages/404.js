@@ -4,7 +4,7 @@ import SiteMetadata from "../components/SiteMetadata"
 
 const ErrorPage = () => (
   <Layout>
-    <SiteMetadata title="Error 404" description="The page doesn't exists" />
+    <SiteMetadata title="Error 404" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
 
     <div className="bg-gray-100">
       <div className="container py-12 pb-64 lg:pb-128">

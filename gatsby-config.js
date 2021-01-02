@@ -14,6 +14,7 @@ module.exports = {
       { name: "Início", to: "/" },
       { name: "Sobre nós", to: "/about" },
       { name: "Iniciativas", to: "/initiatives" },
+      { name: "Artigos", to: "/articles" },
     ],
     links: {
       facebook: "https://www.facebook.com/ambientalist.tecnico",

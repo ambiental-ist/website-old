@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import LinkButton from "../components/LinkButton"
 
-const EventSection = ({ title, thumbnail, type, summary, slug, isBackgroundGray }) => {
+const RowSection = ({ title, thumbnail, type, summary, slug, isBackgroundGray }) => {
 
   return (
 
@@ -38,7 +38,7 @@ const EventSection = ({ title, thumbnail, type, summary, slug, isBackgroundGray 
 
 }
 
-EventSection.propTypes = {
+RowSection.propTypes = {
   title: PropTypes.string.isRequired,
   thumbnail: PropTypes.shape({
     localFile: PropTypes.object,
@@ -49,8 +49,8 @@ EventSection.propTypes = {
   isBackgroundGray: PropTypes.bool.isRequired,
 }
 
-EventSection.defaultProps = {
+RowSection.defaultProps = {
   type: null,
 }
 
-export default EventSection
+export default RowSection
