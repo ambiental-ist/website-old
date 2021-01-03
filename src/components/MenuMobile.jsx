@@ -37,8 +37,8 @@ const MenuMobile = ({ links, isOpen, setIsOpen }) => {
               variants={menuItem}
             >
               <Link
-                className="font-semibold text-4xl text-white"
-                activeClassName="text-blue-500"
+                className="font-semibold text-3xl text-white"
+                activeClassName="text-green-color"
                 to={link.to}
                 onClick={() => setIsOpen(false)}
               >
