@@ -14,7 +14,7 @@ const SocialMedia = () => {
           links {
             facebook
             instagram
-            mail
+            linkedin
           }
         }
       }
