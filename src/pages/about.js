@@ -1,4 +1,5 @@
 import React from "react"
+import Img from "gatsby-image"
 
 import Layout from "../layouts/Layout"
 import SiteMetadata from "../components/SiteMetadata"
@@ -11,8 +12,8 @@ const AboutPage = ({ data }) => (
 
     <div className="bg-gray-100">
       <div className="container py-12 lg:pb-16">
-        <div className="flex flex-wrap">
-          <div className="w-full md:w-1/2 xl:w-3/5 pb-8 md:pb-0">
+        <div className="flex flex-wrap items-center">
+          <div className="w-full lg:w-1/2 xl:w-3/5 pb-8 lg:pb-0">
 
             <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl">
               Sobre nós
@@ -33,8 +34,11 @@ const AboutPage = ({ data }) => (
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 xl:w-2/5 md:pl-12">
-            <img alt="Logo" src="logo_small.png" />
+          <div className="w-full mx-auto max-w-sm lg:w-1/2 xl:w-2/5 lg:pl-12">
+            <Img
+              fluid={data.about_page_photo.childImageSharp.fluid}
+              alt="AboutPhoto"
+            />
           </div>
 
         </div>
@@ -54,3 +58,18 @@ const AboutPage = ({ data }) => (
 )
 
 export default AboutPage
+
+export const query = graphql`
+
+  query AboutQuery {
+
+    about_page_photo: file(relativePath: { eq: "logo_2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 600, maxHeight: 480, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+  }
+`

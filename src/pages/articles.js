@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
 
-      <SiteMetadata title="Iniciativas" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
+      <SiteMetadata title="Artigos" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
       
       {data.article.nodes.map((element, idx )=> (
         <RowSection title={element.title}

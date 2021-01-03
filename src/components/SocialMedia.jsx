@@ -33,7 +33,7 @@ const SocialMedia = () => {
 
       {/* Instagram icon. */}
       <div className="w-full md:w-1/3 pb-8 pt-2 md:pb-0 md:px-5">
-        <div className="flex justify-center pb-5">
+        <div className="flex justify-center pb-4">
           <a
             href={links.instagram}
             target="_blank"
@@ -55,7 +55,7 @@ const SocialMedia = () => {
 
       {/* Facebook icon. */}
       <div className="w-full md:w-1/3 pb-8 md:pb-0 md:px-5">
-        <div className="flex justify-center pb-5">
+        <div className="flex justify-center pb-4">
           <a
             href={links.facebook}
             target="_blank"
@@ -76,7 +76,7 @@ const SocialMedia = () => {
 
       {/* LinkedIn icon. */}
       <div className="w-full md:w-1/3 pb-8 md:pb-0 md:px-5">
-        <div className="flex justify-center pb-5">
+        <div className="flex justify-center pb-4">
           <a
             href={links.linkedin}
             target="_blank"
