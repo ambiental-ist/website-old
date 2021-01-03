@@ -19,6 +19,7 @@ module.exports = {
     links: {
       facebook: "https://www.facebook.com/ambientalist.tecnico",
       instagram: "https://www.instagram.com/ambiental.ist/",
+      linkedin: "https://linkedin.com/company/ambientalist",
       mail: "mailto:ambientalist.sa@aeist.pt",
     },
     locale: "pt",

@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
         })
       }
 
-      // Initiative page.
+      // Article page.
       if (data && data.article) {
         const component = path.resolve("./src/templates/article-item.jsx")
         data.article.nodes.map(({ slug }) => {
