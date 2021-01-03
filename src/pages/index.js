@@ -18,10 +18,10 @@ const IndexPage = ({ data }) => {
         <div className="container py-12 lg:pb-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-1/2 xl:w-3/5 pb-8 md:pb-0">
-              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl">
               Grupo de estudantes <span className="text-green-color">ambientalista</span> do Instituto Superior Técnico.
               </h1>
-              <div className="mt-4 leading-loose">
+              <div className="mt-4 leading-loose text-gray-800">
               Durante anos, o planeta chamou por nós, receou por nós, pediu-nos para que o escutássemos e nos sincronizássemos com ele, com a Natureza. Hoje, já não é apenas um pedido, mas uma necessidade, uma missão. Começando pela nossa universidade, o Instituto Superior Técnico, procuramos promover a adoção de comportamentos responsáveis e hábitos sustentáveis, que protejam o futuro da humanidade e do nosso planeta. Estás pronto para te juntares a nós?
               </div>
             </div>
@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => {
       {/* Initiatives cards section. */}
       <div className="bg-gray-0 py-12 lg:py-16">
         <div className="container">
-          <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-2">
+          <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-2">
             Iniciativas
           </h1>
           {data.initiative && data.initiative.nodes.length > 0 ? (
@@ -53,7 +53,7 @@ const IndexPage = ({ data }) => {
       {/* Articles cards section. */ }
       <div className="bg-gray-100 py-12 lg:py-16">
         <div className="container">
-          <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl pb-2">
+          <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-2">
             Artigos
           </h1>
           {data.article && data.article.nodes.length > 0 ? (

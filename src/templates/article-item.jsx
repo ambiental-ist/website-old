@@ -41,7 +41,7 @@ export default props => {
                 />
             </div>
             <div className="w-full lg:w-1/3 lg:pl-8 xl:pl-12">
-              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-1">
+              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl mb-1">
                 {title}
               </h1>
               { type &&
@@ -83,7 +83,7 @@ export default props => {
       {related && (
         <div className="bg-gray-100 py-12 lg:py-16">
           <div className="container">
-            <h2 className="text-3xl sm:text-4xl leading-tight font-extrabold tracking-tight text-gray-900 mb-8">
+            <h2 className="text-3xl sm:text-4xl leading-tight font-extrabold tracking-tight text-gray-800 mb-8">
               Ver mais
             </h2>
             <Cards items={related} hideLastItemOnMobile={true} />

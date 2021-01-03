@@ -14,7 +14,7 @@ const Card = props => {
           <Img fluid={thumbnail.localFile.childImageSharp.fluid} alt={title} />
         </div>
         <div className="p-4 sm:p-5">
-          <h1 className="sm:text-lg text-gray-900 font-semibold">{title}</h1>
+          <h1 className="sm:text-lg text-gray-800 font-semibold">{title}</h1>
           { type &&
             <h2 className="mt-1 text-sm sm:text-base font-semibold text-gray-600">{type}</h2>
           }

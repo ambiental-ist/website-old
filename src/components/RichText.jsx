@@ -22,7 +22,7 @@ const options = {
 const RichText = ({ text }) => {
 
   return (
-    <div className="mt-4 leading-loose">
+    <div className="mt-4 leading-loose text-gray-800">
         {renderRichText(text, options)}
     </div>
   )

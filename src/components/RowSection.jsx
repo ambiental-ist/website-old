@@ -15,7 +15,7 @@ const RowSection = ({ title, thumbnail, type, summary, slug, isBackgroundGray })
             <Img fluid={thumbnail.localFile.childImageSharp.fluid} alt={title} />
           </div>
           <div className="w-full lg:w-1/3 lg:pl-8 xl:pl-12">
-            <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-1">
+            <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl mb-1">
               {title}
             </h1>
             { type &&
