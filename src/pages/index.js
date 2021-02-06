@@ -6,6 +6,10 @@ import SiteMetadata from "../components/SiteMetadata"
 import Layout from "../layouts/Layout"
 import Cards from "../components/Cards"
 
+import BackgroundSection from "../components/BackgroundSection"
+import LinkButton from "../components/LinkButton"
+
+
 const IndexPage = ({ data }) => {
 
   return (
@@ -29,12 +33,22 @@ const IndexPage = ({ data }) => {
               <Img
                 fluid={data.home_page_photo.childImageSharp.fluid}
                 alt="HomePhoto"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg filter-img"
               />
             </div>
           </div>
         </div>
       </div>
+
+      {/* Carta aberta section. */}
+      <BackgroundSection>
+        <div className="container py-12 lg:py-16 text-center">
+          <h1 className="pb-12 text-3xl text-center leading-tight font-extrabold tracking-tight text-white sm:text-4xl pb-2">
+            Carta Aberta Universitária pelo Clima
+          </h1>
+          <LinkButton to='/carta-aberta' text='Sabe mais e assina!'/>
+        </div>
+      </BackgroundSection>
 
       {/* Initiatives cards section. */}
       <div className="bg-gray-0 py-12 lg:py-16">

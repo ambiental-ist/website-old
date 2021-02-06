@@ -32,7 +32,7 @@ const Footer = () => {
       </ul>
       <div className="mt-8 md:mt-0 md:order-1">
         <p className="text-center text-sm md:text-base text-gray-500">
-          &copy; 2020 Ambientalist. All rights reserved.
+          &copy; 2021 Ambientalist. All rights reserved.
         </p>
       </div>
     </div>
