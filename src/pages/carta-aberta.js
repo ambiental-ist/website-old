@@ -15,14 +15,11 @@ const IndexPage = ({ data }) => {
       <SiteMetadata title="Carta aberta" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
 
       <BackgroundSection>
-        <div className="container py-12 lg:pb-16">
-          <div className="flex flex-wrap">
-            <div className="w-full">
-              <h1 className="text-3xl leading-tight text-center font-extrabold tracking-tight text-white sm:text-4xl">
-                Carta Aberta Universitária pelo Clima
-              </h1>
-            </div>
-
+        <div className="container py-12 lg:pb-16 h-56 flex flex-wrap content-center">
+          <div className="w-full">
+            <h1 className="text-3xl leading-tight text-center font-extrabold tracking-tight text-white sm:text-4xl">
+              Carta Aberta Universitária pelo Clima
+            </h1>
           </div>
         </div>
       </BackgroundSection>

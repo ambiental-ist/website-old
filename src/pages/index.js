@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
           <div className="flex flex-wrap items-center">
             <div className="w-full lg:w-1/2 xl:w-3/5 pb-8 lg:pb-0">
               <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl">
-              Grupo de estudantes <span className="text-green-color">ambientalista</span> do Instituto Superior Técnico.
+              Grupo de estudantes ambientalista do Instituto Superior Técnico.
               </h1>
               <div className="mt-4 leading-loose text-gray-800">
               Durante anos, o planeta chamou por nós, receou por nós, pediu-nos para que o escutássemos e nos sincronizássemos com ele, com a Natureza. Hoje, já não é apenas um pedido, mas uma necessidade, uma missão. Começando pela nossa universidade, o Instituto Superior Técnico, procuramos promover a adoção de comportamentos responsáveis e hábitos sustentáveis, que protejam o futuro da humanidade e do nosso planeta. Estás pronto para te juntares a nós?
@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
           <h1 className="pb-12 text-3xl text-center leading-tight font-extrabold tracking-tight text-white sm:text-4xl pb-2">
             Carta Aberta Universitária pelo Clima
           </h1>
-          <LinkButton to='/carta-aberta' text='Sabe mais e assina!'/>
+          <LinkButton to='carta-aberta' text='Sabe mais e assina!'/>
         </div>
       </BackgroundSection>
 
