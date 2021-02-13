@@ -6,6 +6,7 @@ import Layout from "../layouts/Layout"
 import SiteMetadata from "../components/SiteMetadata"
 
 import BackgroundSection from "../components/BackgroundSection"
+import Button from "../components/Button"
 
 const IndexPage = ({ data }) => {
 
@@ -26,8 +27,9 @@ const IndexPage = ({ data }) => {
 
       <div className="bg-gray-0">
         <div className="container py-12 lg:py-16">
-          <div className="flex justify-center flex-wrap">
 
+          {/* Letter. */}
+          <div className="flex justify-center flex-wrap">
             <div className="max-w-2xl pb-8">
               <h2 className="pb-10 text-xl text-center leading-tight tracking-tight text-gray-600 sm:text-2xl">
                   Movimento universitário pela declaração de <b>emergência climática</b> e <b>neutralidade carbónica</b> nas instituições de ensino superior portuguesas.
@@ -49,8 +51,20 @@ const IndexPage = ({ data }) => {
                 <p className='pb-5'>Este movimento é subscrito por múltiplos grupos de estudantes distribuídos por várias escolas superiores portuguesas. Tendo em conta que a realidade climática difere entre instituições de ensino, contamos com  estudantes de todo o país para apresentarem linhas de ação concretas e adaptadas às necessidades das suas faculdades, no sentido de alcançarmos o objetivo comum de neutralidade carbónica até 2030 nas nossas instituições. Sendo nós, os estudantes, não só as pessoas que mais lidarão com as consequências das políticas hoje adotadas como também os futuros líderes que as irão enfrentar, mostramos a nossa vontade de mudança, mas também de colaboração no sentido de trazer as nossas instituições de ensino para a linha da frente da luta contra a crise climática.</p>
               </div>
             </div>
-
           </div>
+
+          {/* Buttons. */}
+          <div className='max-w-2xl mx-auto pb-8'>
+            <div className="flex justify-center flex-wrap text-center">
+              <div className="w-full md:w-1/2 pb-8 md:pb-0">
+                <Button href='https://www.instagram.com/ambiental.ist/?hl=en'>Assinar individualmente</Button>
+              </div>
+              <div className='w-full md:w-1/2'>
+                <Button href='https://www.instagram.com/ambiental.ist/?hl=en'>Assinar individualmente</Button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     
