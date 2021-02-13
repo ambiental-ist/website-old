@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
                 <Button href='https://www.instagram.com/ambiental.ist/?hl=en'>Assinar individualmente</Button>
               </div>
               <div className='w-full md:w-1/2'>
-                <Button href='https://www.instagram.com/ambiental.ist/?hl=en'>Assinar individualmente</Button>
+                <Button href='https://www.instagram.com/ambiental.ist/?hl=en'>Assinar coletivamente</Button>
               </div>
             </div>
           </div>
