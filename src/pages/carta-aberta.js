@@ -43,11 +43,11 @@ const IndexPage = ({ data }) => {
               </div>
               <div className="leading-loose text-gray-800 pb-12">
                 <p className='pb-5'>Caros líderes de instituições portuguesas de ensino superior,</p>
-                <p className='pb-5'>Vivemos uma situação de emergência. A sua multidisciplinaridade, interseccionalidade e complexidade fazem dela uma ameaça sem precedentes na História da Humanidade, mas é sobretudo a velocidade a que se aproximam as suas consequências, que já se fazem sentir hoje, que dita a urgência com a qual a devemos enfrentar. Trata-se da crise climática e é a maior ameaça existencial que a nossa espécie alguma vez enfrentou, o que apenas reforça a imperatividade de a encarar com a maior brevidade e rigor possíveis.</p>
+                <p className='pb-5'>Vivemos uma situação de emergência. A sua multidisciplinaridade, interseccionalidade e complexidade fazem dela uma ameaça sem precedentes na História da Humanidade, mas é sobretudo a velocidade a que se aproximam as suas consequências, que já se fazem sentir hoje, que dita a urgência com a qual a devemos enfrentar. Trata-se da <b>crise climática</b> e é a maior ameaça existencial que a nossa espécie alguma vez enfrentou, o que apenas reforça a imperatividade de a encarar com a maior brevidade e rigor possíveis.</p>
                 <p className='pb-5'>Os efeitos negativos da ação imponderada do ser humano sobre o planeta Terra são notórios e continuarão a crescer indefinidamente a menos que levemos a cabo alterações sociais drásticas. Constituindo as instituições de ensino pólos de mudança e de pensamento crítico e racional, deverão encontrar-se sempre na linha da frente da resposta aos problemas que a sociedade enfrenta, concretamente no caso da crise climática.</p>
                 <p className='pb-5'>Só conseguiremos resolver verdadeiramente esta crise (e não apenas aliviar os seus sintomas) através de um empenho coletivo a nível mundial, de medidas governamentais ambiciosas e de colaboração entre países e organizações supranacionais. No entanto, a chave para a mudança global passa também pelo investimento a nível local: só uma sociedade constituída por comunidades com um forte sentido de dever social e ambiental se poderá aproximar da justiça climática. As faculdades e as suas políticas têm uma importância e impacto que não devem ser subestimados, pois ao criar mudanças nas suas comunidades locais têm o potencial de as impulsionar e espalhar por outros locais, organismos e instituições de poder, servindo assim de exemplo a replicar pelo resto da sociedade e promovendo mudanças de paradigma de larga escala.</p>
-                <p className='pb-5'>Os estudantes de várias instituições de ensino portuguesas unem-se sob o apelo desta Carta Aberta, em nome do clima e de quem sofre atualmente e sofrerá cada vez mais no futuro pelos efeitos das alterações climáticas, procurando reavivar a luta estudantil por um planeta saudável e um futuro justo e digno para todos. Vimos por este meio pedir às nossas instituições de ensino que declarem Emergência Climática.</p>
-                <p className='pb-5'>Este ato não poderá ser apenas simbólico e deverá, imperativamente, ser acompanhado de um compromisso sério de implementação de medidas concretas e coerentes com esta mesma declaração. Deste modo, vimos exigir ainda que as nossas faculdades alcancem neutralidade carbónica até 2030. Este objetivo está em conformidade com a ciência climática atual, aproximando Portugal do previsto pelo Painel Intergovernamental sobre Mudanças Climáticas das Nações Unidas como necessário para alcançar os objetivos expostos no Acordo de Paris. Para além disto, temos também em conta neste objetivo a responsabilidade acrescida que os países do norte global têm para o alcance destes objetivos e a obrigação das faculdades de impulsionar ambiciosamente esta luta. Estas reivindicações são assim realistas tendo em conta esses objetivos, além de estarem em linha com medidas que já estão a ser aplicadas em instituições de ensino internacionais, no âmbito de movimentos universitários de cariz semelhante.</p>
+                <p className='pb-5'>Os estudantes de várias instituições de ensino portuguesas unem-se sob o apelo desta Carta Aberta, em nome do clima e de quem sofre atualmente e sofrerá cada vez mais no futuro pelos efeitos das alterações climáticas, procurando reavivar a luta estudantil por um planeta saudável e um futuro justo e digno para todos. <b>Vimos por este meio pedir às nossas instituições de ensino que declarem Emergência Climática.</b></p>
+                <p className='pb-5'>Este ato não poderá ser apenas simbólico e deverá, imperativamente, ser acompanhado de um compromisso sério de implementação de medidas concretas e coerentes com esta mesma declaração. Deste modo, <b>vimos exigir ainda que as nossas faculdades alcancem neutralidade carbónica até 2030</b>. Este objetivo está em conformidade com a ciência climática atual, aproximando Portugal do previsto pelo Painel Intergovernamental sobre Mudanças Climáticas das Nações Unidas como necessário para alcançar os objetivos expostos no Acordo de Paris. Para além disto, temos também em conta neste objetivo a responsabilidade acrescida que os países do norte global têm para o alcance destes objetivos e a obrigação das faculdades de impulsionar ambiciosamente esta luta. Estas reivindicações são assim realistas tendo em conta esses objetivos, além de estarem em linha com medidas que já estão a ser aplicadas em instituições de ensino internacionais, no âmbito de movimentos universitários de cariz semelhante.</p>
                 <p>Este movimento é subscrito por múltiplos grupos de estudantes distribuídos por várias escolas superiores portuguesas. Tendo em conta que a realidade climática difere entre instituições de ensino, contamos com  estudantes de todo o país para apresentarem linhas de ação concretas e adaptadas às necessidades das suas faculdades, no sentido de alcançarmos o objetivo comum de neutralidade carbónica até 2030 nas nossas instituições. Sendo nós, os estudantes, não só as pessoas que mais lidarão com as consequências das políticas hoje adotadas como também os futuros líderes que as irão enfrentar, mostramos a nossa vontade de mudança, mas também de colaboração no sentido de trazer as nossas instituições de ensino para a linha da frente da luta contra a crise climática.</p>
               </div>
             </div>
@@ -59,13 +59,13 @@ const IndexPage = ({ data }) => {
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
                 <p>Assinaturas individuais</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  1 200
+                  56
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
                 <p>Assinaturas coletivos</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  23
+                  13
                 </h1>
               </div>
             </div>
@@ -75,10 +75,10 @@ const IndexPage = ({ data }) => {
           <div className='max-w-2xl mx-auto pb-12'>
             <div className="flex justify-center flex-wrap text-center">
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
-                <Button href='https://www.instagram.com/ambiental.ist/?hl=en'>Assinar individualmente</Button>
+                <Button href='https://forms.gle/L9MfmgwqGq4G79i69'>Assinar individualmente</Button>
               </div>
               <div className='w-full md:w-1/2'>
-                <Button href='https://www.instagram.com/ambiental.ist/?hl=en'>Assinar coletivamente</Button>
+                <Button href='https://forms.gle/vxsbbEU6PGwzAmCv6'>Assinar coletivamente</Button>
               </div>
             </div>
           </div>
@@ -106,10 +106,92 @@ const IndexPage = ({ data }) => {
       </div>
     
       <div className="bg-gray-0">
+        <div className="container py-12 lg:pb-16">
+          <div className="flex flex-wrap items-center">
+            <div className="w-full lg:w-1/2 xl:w-3/5 pb-8 lg:pb-0">
+
+              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl">
+                Sobre
+              </h1>
+
+              <div className="mt-4 leading-loose text-gray-800">
+                A Carta Aberta Universitária pelo Clima é um movimento nacional que reúne vários grupos associativos de estudantes sob um apelo comum: a declaração de emergência climática nas instituições de ensino portuguesas. Historicamente, os estudantes sempre foram responsáveis por importantes mudanças de paradigma na nossa sociedade, como por exemplo no combate ao fascismo em Portugal. Os estudantes, sendo as pessoas que mais lidarão com as consequências das alterações climáticas mas também os futuros líderes que as irão enfrentar, deverão estar na linha da frente da luta contra os efeitos da crise climática, procurando proteger todas as pessoas que já hoje sofrem com estes.
+              </div>
+            </div>
+
+            <div className="w-full mx-auto max-w-sm lg:w-1/2 xl:w-2/5 lg:pl-12">
+              <Img
+                    fluid={data.logo_2.childImageSharp.fluid}
+                    alt="CartaAbertaLogo2"
+              />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-100">
         <div className="container py-12 lg:py-16">
           <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-2">
-            Sobre
+            Objetivos
           </h1>
+          <div className="flex flex-wrap text-center">
+            <div className="w-full lg:w-1/2 pb-8 lg:pb-0">
+              <h1 className="text-3xl text-gray-800">1º</h1>
+              <div className="mt-4 leading-loose text-gray-800">
+              Exigimos que as nossas universidades <b>declarem imediatamente emergência climática</b>.
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 lg:pl-12">
+              <h1 className="text-3xl text-gray-800">2º</h1>
+              <div className="mt-4 leading-loose text-gray-800">
+              Exigimos que a declaração de emergência climática não seja apenas simbólica e seja acompanhada por um <b>compromisso para o alcance da neutralidade carbónica até 2030</b>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-0">
+        <div className="container py-12 lg:py-16">
+
+          <div className="flex justify-center flex-wrap">
+
+            <div className="max-w-2xl">
+              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-6">
+              Porquê emergência climática?
+              </h1>
+              <div className="leading-loose text-gray-800 pb-12">
+                  <p className='pb-5'>O reconhecimento de um problema é o primeiro passo para a sua resolução. Num tempo em que a crise pandémica justificou a declaração de estado de emergência a nível nacional, não podemos aceitar que a crise climática, cujas consequências serão ainda mais devastadoras a longo prazo, seja vista com menos gravidade pelo país e pela sociedade.</p>
+                  <p className='pb-5'>Diariamente, cidadãos de todo o mundo sofrem já consequências diretas da ação humana imponderada, maioritariamente em países do sul global. Os estudantes vão ficar indiferentes?</p>
+                  <p>A declaração de emergência climática será o primeiro passo para a atenuação das consequências gravosas das alterações climáticas. Mas não poderemos ficar por aqui: exigimos com esta declaração um compromisso sério de combate às alterações climáticas, medidas concretas, metas ambiciosas e um trabalho extenso e alinhado com a realidade da ciência climática atual.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div className="bg-gray-100">
+        <div className="container py-12 lg:py-16">
+
+          <div className="flex justify-center flex-wrap">
+
+            <div className="max-w-2xl">
+              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-6">
+              Neutralidade Carbónica até 2030
+              </h1>
+              <div className="leading-loose text-gray-800 pb-12">
+                  <p className='pb-5'>O Painel Intergovernamental sobre Mudanças Climáticas da ONU  informa-nos de que a neutralidade carbónica deve ser alcançada a nível global até 2050 para evitar o colapso climático.</p>
+                  <p className='pb-5'>Sendo Portugal um país com elevado índice de desenvolvimento económico, e tendo em conta a maior quantidade de  emissões com que os países mais industrializados contribuíram para as alterações climáticas, o nosso país tem a obrigação moral de fazer uma contribuição acima da média para alcançar este objetivo.</p>
+                  <p className='pb-5'>Para além disso, as universidades constituem ainda importantes pólos de desenvolvimento, investigação e pensamento crítico na sociedade, devendo sempre estar na linha da frente de importantes e necessárias mudanças de paradigma.</p>
+                  <p>Com tudo isto em mente, a nossa responsabilidade para com o planeta é clara: o alcance da neutralidade carbónica até 2030 nas instituições de ensino superior portuguesas!</p>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
 
@@ -129,6 +211,14 @@ export const query = graphql`
     logo: file(relativePath: { eq: "logo_carta_aberta.png" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    },
+
+    logo_2: file(relativePath: { eq: "logo_carta_aberta_2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

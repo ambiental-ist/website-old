@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
               Grupo de estudantes ambientalista do Instituto Superior Técnico.
               </h1>
               <div className="mt-4 leading-loose text-gray-800">
-              Durante anos, o planeta chamou por nós, receou por nós, pediu-nos para que o escutássemos e nos sincronizássemos com ele, com a Natureza. Hoje, já não é apenas um pedido, mas uma necessidade, uma missão. Começando pela nossa universidade, o Instituto Superior Técnico, procuramos promover a adoção de comportamentos responsáveis e hábitos sustentáveis, que protejam o futuro da humanidade e do nosso planeta. Estás pronto para te juntares a nós?
+              Durante anos, o planeta chamou por nós, receou por nós, pediu-nos para que o escutássemos e nos sincronizássemos com ele, com a Natureza. Hoje, já não é apenas um pedido, mas uma necessidade, uma missão. Começando pela nossa universidade, o Instituto Superior Técnico, procuramos promover a adoção de comportamentos responsáveis que protejam o planeta. Queremos unir os estudantes por uma luta comum, a proteção do nosso futuro e do nosso clima. Estás pronto para te juntares a nós?
               </div>
             </div>
             <div className="w-full lg:w-1/2 xl:w-2/5 lg:pl-12">
