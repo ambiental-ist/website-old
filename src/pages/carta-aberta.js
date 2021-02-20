@@ -57,13 +57,15 @@ const IndexPage = ({ data }) => {
           <div className='max-w-2xl mx-auto pb-12'>
             <div className="flex justify-center flex-wrap text-center text-gray-600">
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
-                <p>Assinaturas individuais</p>
+                <p className="text-xl">Assinaturas individuais</p>
+                <p className="text-xs">(atualizado a 20/02/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
                   56
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
-                <p>Assinaturas coletivos</p>
+                <p className="text-xl">Assinaturas coletivos</p>
+                <p className="text-xs">(atualizado a 20/02/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
                   13
                 </h1>
@@ -132,39 +134,37 @@ const IndexPage = ({ data }) => {
 
       <div className="bg-gray-100">
         <div className="container py-12 lg:py-16">
-          <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-2">
-            Objetivos
-          </h1>
           <div className="flex flex-wrap">
-            <div className="w-full lg:w-1/2 pb-8 lg:pb-0">
-              <h1 className="text-3xl text-gray-800 pb-2 text-center"><b>1º</b></h1>
 
-              <h2 className="pb-8 text-xl text-center leading-tight tracking-tight text-gray-800 sm:text-2xl">
+            <div className="w-full pb-12 lg:pb-0 lg:w-1/2 pb-8 lg:pb-0">
+              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-1 text-center">
+                1º Objetivo
+              </h1>
+              <h2 className="pb-2 text-xl text-center leading-tight tracking-tight text-gray-800 sm:text-2xl">
                 <b>Declaração de emergência climática</b>
               </h2>
-                
               <div className="mt-4 leading-loose text-gray-800">
                 <p className='pb-5'>O reconhecimento de um problema é o primeiro passo para a sua resolução. Num tempo em que a crise pandémica justificou a declaração de estado de emergência a nível nacional, não podemos aceitar que a crise climática, cujas consequências serão ainda mais devastadoras a longo prazo, seja vista com menos gravidade pelo país e pela sociedade.</p>
                 <p className='pb-5'>Diariamente, cidadãos de todo o mundo sofrem já consequências diretas da ação humana imponderada, maioritariamente em países do sul global. Os estudantes vão ficar indiferentes?</p>
                 <p>A declaração de emergência climática será o primeiro passo para a atenuação das consequências gravosas das alterações climáticas. Mas não poderemos ficar por aqui: exigimos com esta declaração um compromisso sério de combate às alterações climáticas, medidas concretas, metas ambiciosas e um trabalho extenso e alinhado com a realidade da ciência climática atual.</p>
-            
               </div>
             </div>
-            <div className="w-full lg:w-1/2 lg:pl-12">
-              <h1 className="text-3xl text-gray-800 pb-2 text-center"><b>2º</b></h1>
 
-              <h2 className="pb-8 text-xl text-center leading-tight tracking-tight text-gray-800 sm:text-2xl">
+            <div className="w-full lg:w-1/2 lg:pl-12">
+              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-1 text-center">
+                2º Objetivo
+              </h1>
+              <h2 className="pb-2 text-xl text-center leading-tight tracking-tight text-gray-800 sm:text-2xl">
                 <b>Neutralidade carbónica até 2030</b>
               </h2>
-
               <div className="mt-4 leading-loose text-gray-800">
                   <p className='pb-5'>O Painel Intergovernamental sobre Mudanças Climáticas da ONU  informa-nos de que a neutralidade carbónica deve ser alcançada a nível global até 2050 para evitar o colapso climático.</p>
                   <p className='pb-5'>Sendo Portugal um país com elevado índice de desenvolvimento económico, e tendo em conta a maior quantidade de  emissões com que os países mais industrializados contribuíram para as alterações climáticas, o nosso país tem a obrigação moral de fazer uma contribuição acima da média para alcançar este objetivo.</p>
                   <p className='pb-5'>Para além disso, as universidades constituem ainda importantes pólos de desenvolvimento, investigação e pensamento crítico na sociedade, devendo sempre estar na linha da frente de importantes e necessárias mudanças de paradigma.</p>
                   <p>Com tudo isto em mente, a nossa responsabilidade para com o planeta é clara: o alcance da neutralidade carbónica até 2030 nas instituições de ensino superior portuguesas!</p>
               </div>
-
             </div>
+
           </div>
         </div>
       </div>
@@ -176,34 +176,11 @@ const IndexPage = ({ data }) => {
 
             <div className="max-w-2xl">
               <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-6">
-              Porquê emergência climática?
+              Como apoiar
               </h1>
               <div className="leading-loose text-gray-800 pb-12">
-                  <p className='pb-5'>O reconhecimento de um problema é o primeiro passo para a sua resolução. Num tempo em que a crise pandémica justificou a declaração de estado de emergência a nível nacional, não podemos aceitar que a crise climática, cujas consequências serão ainda mais devastadoras a longo prazo, seja vista com menos gravidade pelo país e pela sociedade.</p>
-                  <p className='pb-5'>Diariamente, cidadãos de todo o mundo sofrem já consequências diretas da ação humana imponderada, maioritariamente em países do sul global. Os estudantes vão ficar indiferentes?</p>
-                  <p>A declaração de emergência climática será o primeiro passo para a atenuação das consequências gravosas das alterações climáticas. Mas não poderemos ficar por aqui: exigimos com esta declaração um compromisso sério de combate às alterações climáticas, medidas concretas, metas ambiciosas e um trabalho extenso e alinhado com a realidade da ciência climática atual.</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div className="bg-gray-100">
-        <div className="container py-12 lg:py-16">
-
-          <div className="flex justify-center flex-wrap">
-
-            <div className="max-w-2xl">
-              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-6">
-              Neutralidade Carbónica até 2030
-              </h1>
-              <div className="leading-loose text-gray-800 pb-12">
-                  <p className='pb-5'>O Painel Intergovernamental sobre Mudanças Climáticas da ONU  informa-nos de que a neutralidade carbónica deve ser alcançada a nível global até 2050 para evitar o colapso climático.</p>
-                  <p className='pb-5'>Sendo Portugal um país com elevado índice de desenvolvimento económico, e tendo em conta a maior quantidade de  emissões com que os países mais industrializados contribuíram para as alterações climáticas, o nosso país tem a obrigação moral de fazer uma contribuição acima da média para alcançar este objetivo.</p>
-                  <p className='pb-5'>Para além disso, as universidades constituem ainda importantes pólos de desenvolvimento, investigação e pensamento crítico na sociedade, devendo sempre estar na linha da frente de importantes e necessárias mudanças de paradigma.</p>
-                  <p>Com tudo isto em mente, a nossa responsabilidade para com o planeta é clara: o alcance da neutralidade carbónica até 2030 nas instituições de ensino superior portuguesas!</p>
+                  <p className='pb-5'>TODO.</p>
+                  <p>TODO.</p>
               </div>
             </div>
 

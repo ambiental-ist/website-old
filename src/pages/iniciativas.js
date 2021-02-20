@@ -16,11 +16,11 @@ const IndexPage = ({ data }) => {
         <div className="container py-12 lg:pb-16">
           <div className="flex flex-wrap">
 
-            <div className="w-full pb-12">
+            {/* <div className="w-full pb-12">
               <h1 className="text-3xl leading-tight text-center font-extrabold tracking-tight text-gray-800 sm:text-4xl">
                 Iniciativas
               </h1>
-            </div>
+            </div> */}
 
             <div className="w-full md:w-1/3 pb-8 pt-2 md:pb-0 md:px-5">
               <h2 className="text-xl text-center leading-tight font-semibold tracking-tight text-gray-800 sm:text-2xl">
