@@ -2,17 +2,26 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import React, { useState } from "react"
 import MenuMobile from "./MenuMobile"
 import { FaBars } from "react-icons/fa"
+import Img from "gatsby-image"
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const { site } = useStaticQuery(graphql`
+  const { site, header_logo } = useStaticQuery(graphql`
     query {
       site {
         data: siteMetadata {
           menu {
             name
             to
+          }
+        }
+      },
+      header_logo: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 100) {
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
@@ -23,7 +32,11 @@ const Header = () => {
     <div className="container pt-6 pb-12 md:pt-12">
       <div className="flex justify-between items-center">
         <Link to="/">
-          <img alt="Logo" className="w-24 md:w-32" src="logo_big.png" />
+          <Img
+            fluid={header_logo.childImageSharp.fluid}
+            alt="LogoHeader"
+            className="w-24 md:w-32"
+          />
         </Link>
 
         <button

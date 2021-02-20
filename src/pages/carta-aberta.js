@@ -135,18 +135,35 @@ const IndexPage = ({ data }) => {
           <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl pb-2">
             Objetivos
           </h1>
-          <div className="flex flex-wrap text-center">
+          <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2 pb-8 lg:pb-0">
-              <h1 className="text-3xl text-gray-800">1º</h1>
+              <h1 className="text-3xl text-gray-800 pb-2 text-center"><b>1º</b></h1>
+
+              <h2 className="pb-8 text-xl text-center leading-tight tracking-tight text-gray-800 sm:text-2xl">
+                <b>Declaração de emergência climática</b>
+              </h2>
+                
               <div className="mt-4 leading-loose text-gray-800">
-              Exigimos que as nossas universidades <b>declarem imediatamente emergência climática</b>.
+                <p className='pb-5'>O reconhecimento de um problema é o primeiro passo para a sua resolução. Num tempo em que a crise pandémica justificou a declaração de estado de emergência a nível nacional, não podemos aceitar que a crise climática, cujas consequências serão ainda mais devastadoras a longo prazo, seja vista com menos gravidade pelo país e pela sociedade.</p>
+                <p className='pb-5'>Diariamente, cidadãos de todo o mundo sofrem já consequências diretas da ação humana imponderada, maioritariamente em países do sul global. Os estudantes vão ficar indiferentes?</p>
+                <p>A declaração de emergência climática será o primeiro passo para a atenuação das consequências gravosas das alterações climáticas. Mas não poderemos ficar por aqui: exigimos com esta declaração um compromisso sério de combate às alterações climáticas, medidas concretas, metas ambiciosas e um trabalho extenso e alinhado com a realidade da ciência climática atual.</p>
+            
               </div>
             </div>
             <div className="w-full lg:w-1/2 lg:pl-12">
-              <h1 className="text-3xl text-gray-800">2º</h1>
+              <h1 className="text-3xl text-gray-800 pb-2 text-center"><b>2º</b></h1>
+
+              <h2 className="pb-8 text-xl text-center leading-tight tracking-tight text-gray-800 sm:text-2xl">
+                <b>Neutralidade carbónica até 2030</b>
+              </h2>
+
               <div className="mt-4 leading-loose text-gray-800">
-              Exigimos que a declaração de emergência climática não seja apenas simbólica e seja acompanhada por um <b>compromisso para o alcance da neutralidade carbónica até 2030</b>.
+                  <p className='pb-5'>O Painel Intergovernamental sobre Mudanças Climáticas da ONU  informa-nos de que a neutralidade carbónica deve ser alcançada a nível global até 2050 para evitar o colapso climático.</p>
+                  <p className='pb-5'>Sendo Portugal um país com elevado índice de desenvolvimento económico, e tendo em conta a maior quantidade de  emissões com que os países mais industrializados contribuíram para as alterações climáticas, o nosso país tem a obrigação moral de fazer uma contribuição acima da média para alcançar este objetivo.</p>
+                  <p className='pb-5'>Para além disso, as universidades constituem ainda importantes pólos de desenvolvimento, investigação e pensamento crítico na sociedade, devendo sempre estar na linha da frente de importantes e necessárias mudanças de paradigma.</p>
+                  <p>Com tudo isto em mente, a nossa responsabilidade para com o planeta é clara: o alcance da neutralidade carbónica até 2030 nas instituições de ensino superior portuguesas!</p>
               </div>
+
             </div>
           </div>
         </div>
