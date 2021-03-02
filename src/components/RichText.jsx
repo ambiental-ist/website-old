@@ -8,7 +8,7 @@ import { BLOCKS, INLINES} from '@contentful/rich-text-types';
 const options = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => {
-      if (children[0].indexOf("<iframe") !== -1) {
+      if ((typeof children[0] === 'string' || children[0] instanceof String) && children[0].indexOf("<iframe") !== -1) {
         // hack - set the inner div html with the iframe html.
         return (
           <div className="flex justify-center pt-8" dangerouslySetInnerHTML={{__html:children[0],}}></div>
