@@ -20,7 +20,7 @@ const AboutPage = ({ data }) => (
             </h1>
 
             <div className="mt-4 leading-loose text-gray-800">
-              O AmbientalIST foi criado com o objetivo de aumentar a consciencialização entre os estudantes e a comunidade do IST para as alterações climáticas e problemas ambientais delas derivados. Os colaboradores do AmbientalIST acreditam que há muito a fazer no que toca a alcançar uma sociedade que priorize a sustentabilidade ambiental mas propõe-se a fazer os possíveis para ajudar a construí-la promovendo mudanças de paradigma na sua comunidade local.
+              O AmbientalIST foi criado com o objetivo de aumentar a consciencialização entre a comunidade do IST para as alterações climáticas e problemas delas derivados. Queremos unir os estudantes sem exceção por uma luta comum: a proteção do nosso futuro e do nosso clima e propomo-nos a fazer os possíveis para promover mudanças de paradigma na nossa comunidade local.
               <br />
               <br />
               Contacta-nos:

@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../layouts/Layout"
@@ -96,11 +96,14 @@ const IndexPage = ({ data }) => {
 
           <div class="grid grid-cols-2 gap-6 md:grid-cols-6 md:gap-12 text-center">
 
-            {data.signants_logos.edges.map((image, idx ) => (
-              <Img
-                fluid={image.node.childImageSharp.fluid}
-                alt={'carta-aberta-logo-' + idx}
-              />
+            {data.signants.nodes.map((element, idx ) => (
+              <Link to={element.url} target="_blank">
+                <Img
+                  fluid={element.image.localFile.childImageSharp.fluid}
+                  alt={'carta-aberta-logo-' + idx}
+                />
+              </Link>
+
             ))}
 
           </div>
@@ -144,9 +147,9 @@ const IndexPage = ({ data }) => {
                 <b>Declaração de emergência climática</b>
               </h2>
               <div className="mt-4 leading-loose text-gray-800">
-                <p className='pb-5'>O reconhecimento de um problema é o primeiro passo para a sua resolução. Num tempo em que a crise pandémica justificou a declaração de estado de emergência a nível nacional, não podemos aceitar que a crise climática, cujas consequências serão ainda mais devastadoras a longo prazo, seja vista com menos gravidade pelo país e pela sociedade.</p>
-                <p className='pb-5'>Diariamente, cidadãos de todo o mundo sofrem já consequências diretas da ação humana imponderada, maioritariamente em países do sul global. Os estudantes vão ficar indiferentes?</p>
-                <p>A declaração de emergência climática será o primeiro passo para a atenuação das consequências gravosas das alterações climáticas. Mas não poderemos ficar por aqui: exigimos com esta declaração um compromisso sério de combate às alterações climáticas, medidas concretas, metas ambiciosas e um trabalho extenso e alinhado com a realidade da ciência climática atual.</p>
+                <p className='pb-5'>Num tempo em que a crise pandémica justificou a declaração de estado de emergência a nível nacional, não podemos aceitar que a crise climática, cujas consequências serão ainda mais devastadoras a longo prazo, seja vista com menos gravidade.</p>
+                <p className='pb-5'>O reconhecimento de um problema é o primeiro passo para a sua resolução. Cidadãos de todo o mundo já sofrem consequências diretas da ação humana imponderada, maioritariamente em países do sul global.</p>
+                <p>A declaração de emergência climática será o primeiro passo para a atenuação das consequências gravosas das alterações climáticas. Exigimos com esta declaração um compromisso sério de combate às alterações climáticas, medidas concretas, metas ambiciosas e um trabalho extenso e alinhado com a realidade da ciência climática atual.</p>
               </div>
             </div>
 
@@ -158,10 +161,10 @@ const IndexPage = ({ data }) => {
                 <b>Neutralidade carbónica até 2030</b>
               </h2>
               <div className="mt-4 leading-loose text-gray-800">
-                  <p className='pb-5'>O Painel Intergovernamental sobre Mudanças Climáticas da ONU  informa-nos de que a neutralidade carbónica deve ser alcançada a nível global até 2050 para evitar o colapso climático.</p>
-                  <p className='pb-5'>Sendo Portugal um país com elevado índice de desenvolvimento económico, e tendo em conta a maior quantidade de  emissões com que os países mais industrializados contribuíram para as alterações climáticas, o nosso país tem a obrigação moral de fazer uma contribuição acima da média para alcançar este objetivo.</p>
-                  <p className='pb-5'>Para além disso, as universidades constituem ainda importantes pólos de desenvolvimento, investigação e pensamento crítico na sociedade, devendo sempre estar na linha da frente de importantes e necessárias mudanças de paradigma.</p>
-                  <p>Com tudo isto em mente, a nossa responsabilidade para com o planeta é clara: o alcance da neutralidade carbónica até 2030 nas instituições de ensino superior portuguesas!</p>
+                  <p className='pb-5'>O Painel Intergovernamental sobre Mudanças Climáticas da ONU informa-nos de que a neutralidade carbónica deve ser alcançada a nível global até 2050 para evitar o colapso climático.</p>
+                  <p className='pb-5'>Tendo em conta a maior quantidade de emissões de GCEs que os países mais industrializados provocaram, e dado o elevado índice de desenvolvimento económico de Portugal, temos a obrigação de contribuir mais ambiciosamente para este objetivo.</p>
+                  <p className='pb-5'>Para além disso, as universidades constituem importantes pólos de desenvolvimento, investigação e pensamento crítico, devendo sempre estar na linha da frente de importantes e necessárias mudanças.</p>
+                  <p>Com tudo isto em mente, a nossa responsabilidade é clara: o alcance da neutralidade carbónica até 2030 nas instituições de ensino superior portuguesas!</p>
               </div>
             </div>
 
@@ -218,15 +221,16 @@ export const query = graphql`
       }
     },
 
-    signants_logos: allFile(filter: {
-      extension: {regex: "/(jpg)|(jpeg)|(png)/"},
-      relativeDirectory: { eq: "carta_aberta" }})
-    {
-      edges {
-        node {
-          childImageSharp {
-            fluid(maxWidth: 300, quality: 100) {
-              ...GatsbyImageSharpFluid
+    signants: allContentfulCartaAbertaLogo {
+      nodes {
+        name
+        url
+        image {
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 400, maxHeight: 400, quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
             }
           }
         }

@@ -72,3 +72,9 @@ blockquote p {
   display: inline;
   font-style: italic;
 }
+
+@media screen and (max-width: 750px) {
+  iframe {
+      max-width: 100% !important;
+  }
+}

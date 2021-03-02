@@ -85,12 +85,12 @@ export const query = graphql`
         summary
         thumbnail {
           localFile {
-              childImageSharp {
-                fluid(maxWidth: 960, maxHeight: 600, quality: 90) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+            childImageSharp {
+              fluid(maxWidth: 960, maxHeight: 600, quality: 90) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
+          }
         }
       }
     },
