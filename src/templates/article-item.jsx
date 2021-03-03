@@ -51,7 +51,7 @@ export default props => {
               }
               {author ? (
                 <h5 className="mt-1 text-sm leading-tight tracking-tight text-gray-600">
-                  {author} · {date}
+                  {date} · {author} 
                 </h5>
               ) : (
                 <h5 className="mt-1 text-sm leading-tight tracking-tight text-gray-600">

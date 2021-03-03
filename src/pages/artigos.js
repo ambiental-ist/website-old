@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout"
 import SiteMetadata from "../components/SiteMetadata"
 import RowSection from "../components/RowSection"
 
-const IndexPage = ({ data }) => {
+const ArtigosPage = ({ data }) => {
 
   return (
     <Layout>
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
 
 }
 
-export default IndexPage
+export default ArtigosPage
 
 
 export const query = graphql`

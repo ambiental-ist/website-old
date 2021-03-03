@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout"
 import SiteMetadata from "../components/SiteMetadata"
 import RowSection from "../components/RowSection"
 
-const IndexPage = ({ data }) => {
+const IniciativasPage = ({ data }) => {
 
   return (
     <Layout>
@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
 
 }
 
-export default IndexPage
+export default IniciativasPage
 
 
 export const query = graphql`
