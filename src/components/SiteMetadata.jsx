@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const SiteMetadata = ({ title, description, image }) => {
   const {
     site: {
-      siteMetadata: { locale, siteTitle },
+      siteMetadata: { locale, siteTitle, logoPreview },
     },
   } = useStaticQuery(graphql`
     query SiteMetadata {
@@ -14,6 +14,13 @@ const SiteMetadata = ({ title, description, image }) => {
         siteMetadata {
           locale
           siteTitle: title
+        }
+      },
+      logoPreview: file(relativePath: { eq: "logo_2.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600, maxHeight: 480, quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
     }
@@ -33,10 +40,10 @@ const SiteMetadata = ({ title, description, image }) => {
       <meta property="og:title" content={title} />
       <meta property="og:locale" content={locale} />
       <meta property="og:site_name" content={siteTitle} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={logoPreview} />
       <meta property="og:description" content={description} />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={logoPreview} />
     </Helmet>
   )
 }

@@ -8,7 +8,7 @@ const PoliticaDadosPage = ({ data }) => {
   return (
     <Layout>
 
-      <SiteMetadata title="Carta aberta - política dados" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
+      <SiteMetadata title="Carta aberta política dados" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
 
       {/* Rich text section. */}
       <div className="bg-gray-0 py-12 lg:py-16">
