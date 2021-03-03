@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
       <BackgroundSection>
         <div className="container py-12 lg:py-16 text-center">
           <h1 className="pb-12 text-3xl text-center leading-tight font-extrabold tracking-tight text-white sm:text-4xl pb-2">
-            Carta Aberta Universitária pelo Clima
+            Carta Aberta do Ensino Superior pelo Clima
           </h1>
           <LinkButton to='carta-aberta' text='Sabe mais e assina!'/>
         </div>
