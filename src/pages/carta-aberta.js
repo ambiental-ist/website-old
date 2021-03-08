@@ -67,7 +67,7 @@ const CartaAbertaPage = ({ data }) => {
                 <p className="text-xl">Assinaturas coletivas</p>
                 <p className="text-xs">(atualizado a 08/03/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  35
+                  36
                 </h1>
               </div>
             </div>
