@@ -15,7 +15,7 @@ module.exports = {
       { name: "Sobre nós", to: "/sobre" },
       { name: "Iniciativas", to: "/iniciativas" },
       { name: "Artigos", to: "/artigos" },
-      { name: "Carta aberta", to: "/carta-aberta" },
+      { name: "Carta Aberta", to: "/carta-aberta" },
     ],
     links: {
       facebook: "https://www.facebook.com/ambientalist.tecnico",
