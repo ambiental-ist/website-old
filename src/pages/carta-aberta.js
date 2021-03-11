@@ -58,16 +58,16 @@ const CartaAbertaPage = ({ data }) => {
             <div className="flex justify-center flex-wrap text-center text-gray-600">
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
                 <p className="text-xl">Assinaturas individuais</p>
-                <p className="text-xs">(atualizado a 08/03/2021)</p>
+                <p className="text-xs">(atualizado a 11/03/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  56
+                  90
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
                 <p className="text-xl">Assinaturas coletivas</p>
-                <p className="text-xs">(atualizado a 08/03/2021)</p>
+                <p className="text-xs">(atualizado a 11/03/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  36
+                  38
                 </h1>
               </div>
             </div>
@@ -184,9 +184,10 @@ const CartaAbertaPage = ({ data }) => {
               <div className="mt-4 leading-loose text-gray-800">
                 <ul>
                   <li className="mt-1"><h2 className="inline text-xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-xl">1. Assina!</h2> Convida também os teus conhecidos, familiares, professores, investigadores, funcionários não-docentes a conhecerem e assinarem o movimento. Esta é uma luta começada pelos estudantes, mas é uma luta que diz respeito a tod@s nós, e teremos de lutar por tod@s!</li>
-                  <li className="mt-1"><h2 className="inline text-xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-xl">2. Partilha</h2> nas tuas redes sociais!</li>
-                  <li className="mt-1"><h2 className="inline text-xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-xl">3. Convida</h2> núcleos, associações e organizações a conhecerem a Carta Aberta do Ensino Superior pelo Clima! Incentiva-os a entrarem em contacto connosco. A união entre todo o tipo de entidades e associações é crucial, porque só assim conseguiremos ter o impacto necessário para a mudança que ambicionamos. Ambicionamos construir um movimento que una tod@s sem exceção, lutando pelo futuro de tod@s sem exceção.</li>
-                  <li className="mt-1"><h2 className="inline text-xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-xl">4. Contacta-nos</h2> se tiveres alguma questão ou comentário!</li>
+                  <li className="mt-1"><h2 className="inline text-xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-xl">2. Partilha</h2> nas tuas redes sociais com o link <b>bit.ly/carta-clima</b>.</li>
+                  <li className="mt-1"><h2 className="inline text-xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-xl">3. Descarrega e publica</h2> o instagram story de apoio à iniciativa <a href="https://mega.nz/file/C9xS3C4J#3y2sINdIw0kuvZQNndyJimGg4zGrA9OjgEdb-VaCg4g" target="_blank" rel="noreferrer" className="border-b border-gray-500 border-green-color-hover text-green-color-hover">aqui</a>.</li>
+                  <li className="mt-1"><h2 className="inline text-xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-xl">4. Convida</h2> núcleos, associações e organizações a conhecerem a Carta Aberta do Ensino Superior pelo Clima! Incentiva-os a entrarem em contacto connosco. A união entre todo o tipo de entidades e associações é crucial, porque só assim conseguiremos ter o impacto necessário para a mudança que ambicionamos. Ambicionamos construir um movimento que una tod@s sem exceção, lutando pelo futuro de tod@s sem exceção.</li>
+                  <li className="mt-1"><h2 className="inline text-xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-xl">5. Contacta-nos</h2> se tiveres alguma questão ou comentário!</li>
                 </ul>
               </div>
             </div>
@@ -215,7 +216,7 @@ export const query = graphql`
 
   query CartaAbertaQuery {
 
-    logo: file(relativePath: { eq: "logo_carta_aberta.jpeg" }) {
+    logo: file(relativePath: { eq: "logo_carta_aberta.png" }) {
       childImageSharp {
         fluid(maxWidth: 100, maxHeight: 100, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
@@ -223,7 +224,7 @@ export const query = graphql`
       }
     },
 
-    logo_2: file(relativePath: { eq: "logo_carta_aberta_2.jpeg" }) {
+    logo_2: file(relativePath: { eq: "logo_carta_aberta_2.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
@@ -231,7 +232,7 @@ export const query = graphql`
       }
     },
 
-    photo_climate_march: file(relativePath: { eq: "lolidas.jpg" }) {
+    photo_climate_march: file(relativePath: { eq: "manif.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
