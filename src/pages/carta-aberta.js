@@ -58,16 +58,16 @@ const CartaAbertaPage = ({ data }) => {
             <div className="flex justify-center flex-wrap text-center text-gray-600">
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
                 <p className="text-xl">Assinaturas individuais</p>
-                <p className="text-xs">(atualizado a 11/03/2021)</p>
+                <p className="text-xs">(atualizado a 16/03/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  90
+                  504
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
                 <p className="text-xl">Assinaturas coletivas</p>
-                <p className="text-xs">(atualizado a 11/03/2021)</p>
+                <p className="text-xs">(atualizado a 16/03/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  38
+                  53
                 </h1>
               </div>
             </div>
@@ -94,7 +94,7 @@ const CartaAbertaPage = ({ data }) => {
             Assinantes
           </h1>
 
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-6 md:gap-12 text-center">
+          <div className="grid grid-cols-3 gap-6 md:grid-cols-8 md:gap-10 text-center">
 
             {data.signants.nodes.map((element, idx ) => (
               <a target="_blank" rel="noopener noreferrer" href={element.url}>
@@ -120,7 +120,15 @@ const CartaAbertaPage = ({ data }) => {
               </h1>
 
               <div className="mt-4 leading-loose text-gray-800">
-                A Carta Aberta do Ensino Superior pelo Clima é um movimento nacional que reúne vários grupos associativos de estudantes sob um apelo comum: a declaração de emergência climática nas instituições de ensino portuguesas. Historicamente, os estudantes sempre foram responsáveis por importantes mudanças de paradigma na nossa sociedade, como por exemplo no combate ao fascismo em Portugal. Os estudantes, sendo as pessoas que mais lidarão com as consequências das alterações climáticas mas também os futuros líderes que as irão enfrentar, deverão estar na linha da frente da luta contra os efeitos da crise climática, procurando proteger todas as pessoas que já hoje sofrem com estes.
+              A Carta Aberta do Ensino Superior pelo Clima é um movimento nacional que reúne vários grupos associativos de estudantes. Acreditando que a comunidade estudantil pode ser motora para uma mudança a larga escala, pretendemos revitalizar a histórica luta estudantil portuguesa, desta vez com foco no clima.
+              </div>
+
+              <h2 className="text-3xl pt-8 leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl">
+                O nosso propósito
+              </h2>
+
+              <div className="mt-4 leading-loose text-gray-800">
+              Queremos pressionar os nossos líderes a agirem, mas também queremos ser parte da solução! Apresentaremos esta Carta aos líderes das nossas instituições, expressando a nossa vontade de mudança. De seguida, para vermos os objetivos do movimento tornarem-se realidade, através do diálogo entre todas as associações envolvidas, e contando também com o apoio de organizações experientes, iremos apresentar medidas concretas adaptadas à realidade de cada instituição.
               </div>
             </div>
 
