@@ -58,16 +58,16 @@ const CartaAbertaPage = ({ data }) => {
             <div className="flex justify-center flex-wrap text-center text-gray-600">
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
                 <p className="text-xl">Assinaturas individuais</p>
-                <p className="text-xs">(atualizado a 21/03/2021)</p>
+                <p className="text-xs">(atualizado a 31/03/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  828
+                  1027
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
                 <p className="text-xl">Assinaturas coletivas</p>
-                <p className="text-xs">(atualizado a 16/03/2021)</p>
+                <p className="text-xs">(atualizado a 31/03/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  53
+                  66
                 </h1>
               </div>
             </div>
