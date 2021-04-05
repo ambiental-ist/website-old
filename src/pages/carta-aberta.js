@@ -7,13 +7,14 @@ import SiteMetadata from "../components/SiteMetadata"
 
 import BackgroundSection from "../components/BackgroundSection"
 import Button from "../components/Button"
+import ShareButtons from "../components/ShareButtons"
 
 const CartaAbertaPage = ({ data }) => {
 
   return (
     <Layout>
 
-      <SiteMetadata title="Carta aberta" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
+      <SiteMetadata title="Carta Aberta do Ensino Superior pelo Clima" description="Grupo de estudantes ambientalista do Instituto Superior Técnico." />
 
       <BackgroundSection>
         <div className="container py-12 lg:pb-16 h-56 flex flex-wrap content-center">
@@ -34,12 +35,15 @@ const CartaAbertaPage = ({ data }) => {
               <h2 className="pb-12 text-xl text-center leading-tight tracking-tight text-gray-600 sm:text-2xl">
                   Movimento universitário pela declaração de <b>emergência climática</b> e <b>neutralidade carbónica</b> nas instituições de ensino superior portuguesas.
               </h2>
-              <div className="pb-12 text-center">
-                <Img
-                    fluid={data.logo.childImageSharp.fluid}
-                    alt="CartaAbertaLogo"
-                    className="w-12 inline-block align-middle"
-                  />
+              <div className='max-w-2xl mx-auto pb-12'>
+                <div className="flex justify-center flex-wrap text-center">
+                  <div className="w-full md:w-1/2 pb-8 md:pb-0">
+                    <Button href='https://forms.gle/L9MfmgwqGq4G79i69'>Assinar individualmente</Button>
+                  </div>
+                  <div className='w-full md:w-1/2'>
+                    <Button href='https://forms.gle/vxsbbEU6PGwzAmCv6'>Assinar coletivamente</Button>
+                  </div>
+                </div>
               </div>
               <div className="leading-loose text-gray-800 pb-12">
                 <p className='pb-5'>Caros líderes de instituições portuguesas de ensino superior,</p>
@@ -58,16 +62,16 @@ const CartaAbertaPage = ({ data }) => {
             <div className="flex justify-center flex-wrap text-center text-gray-600">
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
                 <p className="text-xl">Assinaturas individuais</p>
-                <p className="text-xs">(atualizado a 31/03/2021)</p>
+                <p className="text-xs">(atualizado a 04/04/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  1027
+                  1334
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
                 <p className="text-xl">Assinaturas coletivas</p>
-                <p className="text-xs">(atualizado a 31/03/2021)</p>
+                <p className="text-xs">(atualizado a 04/04/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  66
+                  70
                 </h1>
               </div>
             </div>
@@ -96,7 +100,8 @@ const CartaAbertaPage = ({ data }) => {
 
           <div className="grid grid-cols-3 gap-6 md:grid-cols-8 md:gap-10 text-center">
 
-            {data.signants.nodes.map((element, idx ) => (
+            {
+            data.signants.nodes.sort(function(x,y){ return x.name === "AmbientalIST" ? -1 : y === "AmbientalIST" ? 1 : 0; }).map((element, idx ) => (
               <a target="_blank" rel="noopener noreferrer" href={element.url}>
                 <Img
                   fluid={element.image.localFile.childImageSharp.fluid}
@@ -200,11 +205,11 @@ const CartaAbertaPage = ({ data }) => {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 xl:w-2/5 lg:pl-12">
-              <Img
-                    fluid={data.photo_climate_march.childImageSharp.fluid}
-                    alt="CartaAbertaLogo2"
-              />
+            <div className="w-full lg:w-1/2 xl:w-2/5 lg:pl-12 text-center">
+              <ShareButtons
+                titleTwitter="Já conheces a Carta Aberta do Ensino Superior pelo Clima? Assina e junta-te ao movimento!"
+                titleWhatsApp="Queria dar a conhecer a Carta Aberta do Ensino Superior pelo Clima. A comunidade estudantil de norte a sul do país apela à declaração de emergência climática e à neutralidade carbónica nas suas Instituições de Ensino Superior. Assina o movimento!"
+                url="bit.ly/carta-clima"/>
             </div>
 
           </div>
@@ -235,14 +240,6 @@ export const query = graphql`
     logo_2: file(relativePath: { eq: "logo_carta_aberta_2.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    },
-
-    photo_climate_march: file(relativePath: { eq: "manif.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 600, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
