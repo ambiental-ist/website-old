@@ -64,7 +64,7 @@ const OpenLetterPage = ({ data }) => {
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
-                <p className="text-xl">Colective subscriptions</p>
+                <p className="text-xl">Collective subscriptions</p>
                 <p className="text-xs">(Updated 26/04/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
                   89
