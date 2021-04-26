@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../layouts/Layout"
@@ -62,16 +62,16 @@ const CartaAbertaPage = ({ data }) => {
             <div className="flex justify-center flex-wrap text-center text-gray-600">
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
                 <p className="text-xl">Assinaturas individuais</p>
-                <p className="text-xs">(atualizado a 04/04/2021)</p>
+                <p className="text-xs">(atualizado a 26/04/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  1334
+                  1701
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
                 <p className="text-xl">Assinaturas coletivas</p>
-                <p className="text-xs">(atualizado a 04/04/2021)</p>
+                <p className="text-xs">(atualizado a 26/04/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  70
+                  89
                 </h1>
               </div>
             </div>
@@ -210,6 +210,16 @@ const CartaAbertaPage = ({ data }) => {
                 titleTwitter="Já conheces a Carta Aberta do Ensino Superior pelo Clima? Assina e junta-te ao movimento!"
                 titleWhatsApp="Queria dar a conhecer a Carta Aberta do Ensino Superior pelo Clima. A comunidade estudantil de norte a sul do país apela à declaração de emergência climática e à neutralidade carbónica nas suas Instituições de Ensino Superior. Assina o movimento!"
                 url="bit.ly/carta-clima"/>
+            </div>
+
+            <div className='max-w-2xl mx-auto pt-12 pb-2'>
+              <div className="flex justify-center flex-wrap text-center">
+                <div className="w-full pb-2 md:pb-0">
+                  <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                    <Link to="/open-letter">English version</Link>
+                  </button>
+                </div>
+              </div>
             </div>
 
           </div>
