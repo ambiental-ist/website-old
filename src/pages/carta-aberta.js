@@ -62,14 +62,14 @@ const CartaAbertaPage = ({ data }) => {
             <div className="flex justify-center flex-wrap text-center text-gray-600">
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
                 <p className="text-xl">Assinaturas individuais</p>
-                <p className="text-xs">(atualizado a 26/04/2021)</p>
+                <p className="text-xs">(atualizado a 25/05/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                  1701
+                  1762
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
                 <p className="text-xl">Assinaturas coletivas</p>
-                <p className="text-xs">(atualizado a 26/04/2021)</p>
+                <p className="text-xs">(atualizado a 25/05/2021)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
                   89
                 </h1>
@@ -88,6 +88,14 @@ const CartaAbertaPage = ({ data }) => {
               </div>
             </div>
           </div>
+
+          <div className="w-full text-center">
+              <ShareButtons
+                titleTwitter="Já conheces a Carta Aberta do Ensino Superior pelo Clima? Assina e junta-te ao movimento!"
+                titleWhatsApp="Queria dar a conhecer a Carta Aberta do Ensino Superior pelo Clima. A comunidade estudantil de norte a sul do país apela à declaração de emergência climática e à neutralidade carbónica nas suas Instituições de Ensino Superior. Assina o movimento!"
+                url="bit.ly/carta-clima"
+                instagramLink="https://mega.nz/file/C9xS3C4J#3y2sINdIw0kuvZQNndyJimGg4zGrA9OjgEdb-VaCg4g"/>
+            </div>
 
         </div>
       </div>
@@ -209,7 +217,8 @@ const CartaAbertaPage = ({ data }) => {
               <ShareButtons
                 titleTwitter="Já conheces a Carta Aberta do Ensino Superior pelo Clima? Assina e junta-te ao movimento!"
                 titleWhatsApp="Queria dar a conhecer a Carta Aberta do Ensino Superior pelo Clima. A comunidade estudantil de norte a sul do país apela à declaração de emergência climática e à neutralidade carbónica nas suas Instituições de Ensino Superior. Assina o movimento!"
-                url="bit.ly/carta-clima"/>
+                url="bit.ly/carta-clima"
+                instagramLink="https://mega.nz/file/C9xS3C4J#3y2sINdIw0kuvZQNndyJimGg4zGrA9OjgEdb-VaCg4g"/>
             </div>
 
             <div className='max-w-2xl mx-auto pt-12 pb-2'>
