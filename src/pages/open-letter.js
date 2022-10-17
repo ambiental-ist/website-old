@@ -58,14 +58,14 @@ const OpenLetterPage = ({ data }) => {
             <div className="flex justify-center flex-wrap text-center text-gray-600">
               <div className="w-full md:w-1/2 pb-8 md:pb-0">
                 <p className="text-xl">Individual subscriptions</p>
-                <p className="text-xs">(Updated 12/01/2022)</p>
+                <p className="text-xs">(Updated 17/10/2022)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
-                    2072
+                  2275
                 </h1>
               </div>
               <div className='w-full md:w-1/2'>
                 <p className="text-xl">Collective subscriptions</p>
-                <p className="text-xs">(Updated 12/01/2022)</p>
+                <p className="text-xs">(Updated 17/10/2022)</p>
                 <h1 className="text-5xl leading-tight text-center tracking-tight pt-1">
                   89
                 </h1>
