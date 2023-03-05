@@ -35,16 +35,16 @@ const CartaAbertaPage = ({ data }) => {
               <h2 className="pb-12 text-xl text-center leading-tight tracking-tight text-gray-600 sm:text-2xl">
                   Movimento universitário pela declaração de <b>emergência climática</b> e <b>neutralidade carbónica</b> nas instituições de ensino superior portuguesas.
               </h2>
-              <div className='max-w-2xl mx-auto pb-12'>
-                <div className="flex justify-center flex-wrap text-center">
-                  <div className="w-full md:w-1/2 pb-8 md:pb-0">
-                    <Button href='https://forms.gle/L9MfmgwqGq4G79i69'>Assinar individualmente</Button>
-                  </div>
-                  <div className='w-full md:w-1/2'>
-                    <Button href='https://forms.gle/vxsbbEU6PGwzAmCv6'>Assinar coletivamente</Button>
-                  </div>
+
+            {/* Buttons. */}
+            <div className='max-w-2xl mx-auto pb-12'>
+              <div className="flex justify-center flex-wrap text-center">
+                <div className="w-full pb-8 md:pb-0">
+                  <Button href='https://www.dropbox.com/s/1ltsdxjbeu5cezi/Guia%20para%20a%20Neutralidade%20Carbonica%202030%20-%20CAESC.pdf?dl=0'>Guia para a Neutralidade Carbónica</Button>
                 </div>
               </div>
+            </div>
+
               <div className="leading-loose text-gray-800 pb-12">
                 <p className='pb-5'>Caros líderes de instituições portuguesas de ensino superior,</p>
                 <p className='pb-5'>Vivemos uma situação de emergência. A sua multidisciplinaridade, interseccionalidade e complexidade fazem dela uma ameaça sem precedentes na História da Humanidade, mas é sobretudo a velocidade a que se aproximam as suas consequências, que já se fazem sentir hoje, que dita a urgência com a qual a devemos enfrentar. Trata-se da <b>crise climática</b> e é a maior ameaça existencial que a nossa espécie alguma vez enfrentou, o que apenas reforça a imperatividade de a encarar com a maior brevidade e rigor possíveis.</p>
@@ -77,6 +77,7 @@ const CartaAbertaPage = ({ data }) => {
             </div>
           </div>
 
+
           {/* Buttons. */}
           <div className='max-w-2xl mx-auto pb-12'>
             <div className="flex justify-center flex-wrap text-center">
@@ -95,7 +96,8 @@ const CartaAbertaPage = ({ data }) => {
                 titleWhatsApp="Queria dar a conhecer a Carta Aberta do Ensino Superior pelo Clima. A comunidade estudantil de norte a sul do país apela à declaração de emergência climática e à neutralidade carbónica nas suas Instituições de Ensino Superior. Assina o movimento!"
                 url="bit.ly/carta-clima"
                 instagramLink="https://mega.nz/file/C9xS3C4J#3y2sINdIw0kuvZQNndyJimGg4zGrA9OjgEdb-VaCg4g"/>
-            </div>
+          </div>
+
 
         </div>
       </div>
@@ -141,7 +143,8 @@ const CartaAbertaPage = ({ data }) => {
               </h2>
 
               <div className="mt-4 leading-loose text-gray-800">
-              Queremos pressionar os nossos líderes a agirem, mas também queremos ser parte da solução! Apresentaremos esta Carta aos líderes das nossas instituições, expressando a nossa vontade de mudança. De seguida, para vermos os objetivos do movimento tornarem-se realidade, através do diálogo entre todas as associações envolvidas, e contando também com o apoio de organizações experientes, iremos apresentar medidas concretas adaptadas à realidade de cada instituição.
+                <p className='pb-5'>Queremos pressionar os nossos líderes a agirem, mas também queremos ser parte da solução! Apresentaremos esta Carta aos líderes das nossas instituições, expressando a nossa vontade de mudança.</p>
+                <p className='pb-5'>Redigimos também um conjunto de medidas que podem ser implementadas nas nossas instituições de ensino superior, com vista a estas se tornarem neutras em carbono. Estas medidas encontram-se compiladas por setor (energia, edifícios, transportes, alimentação, etc.) no <a href="https://www.dropbox.com/s/1ltsdxjbeu5cezi/Guia%20para%20a%20Neutralidade%20Carbonica%202030%20-%20CAESC.pdf?dl=0" target="_blank" rel="noreferrer" className="border-b border-gray-500 border-green-color-hover text-green-color-hover">Guia para a Neutralidade Carbónica 2030</a>, revisto cientificamente por um perito.</p>
               </div>
             </div>
 
