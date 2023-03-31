@@ -26,16 +26,22 @@ body {
 
 /* Custom CSS. */
 .text-green-color {
-  color: #62c103;
+  color:#5ab501;
 }
 .text-green-color-hover:hover {
-  color: #62c103;
+  color: #5ab501;
 }
 .border-green-color {
-  border-color:#62c103;
+  border-color:#5ab501;
 }
 .border-green-color-hover:hover {
-  border-color:#62c103;
+  border-color:#5ab501;
+}
+.filter-img {
+  filter: saturate(0.9) contrast(0.9);
+}
+.background-green-color {
+  background-color: #5ab501;
 }
 
 /* Quotes */
@@ -65,4 +71,10 @@ blockquote:after {
 blockquote p {
   display: inline;
   font-style: italic;
+}
+
+@media screen and (max-width: 750px) {
+  iframe {
+      max-width: 100% !important;
+  }
 }

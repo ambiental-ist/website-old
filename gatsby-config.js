@@ -12,9 +12,10 @@ module.exports = {
   siteMetadata: {
     menu: [
       { name: "Início", to: "/" },
-      { name: "Sobre nós", to: "/about" },
-      { name: "Iniciativas", to: "/initiatives" },
-      { name: "Artigos", to: "/articles" },
+      { name: "Sobre nós", to: "/sobre" },
+      { name: "Iniciativas", to: "/iniciativas" },
+      { name: "Artigos", to: "/artigos" },
+      { name: "Carta Aberta", to: "/carta-aberta" },
     ],
     links: {
       facebook: "https://www.facebook.com/ambientalist.tecnico",
@@ -66,5 +67,4 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: "/website",
 }

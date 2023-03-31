@@ -7,7 +7,18 @@ import { BLOCKS, INLINES} from '@contentful/rich-text-types';
 
 const options = {
   renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => <p className='pb-5'>{children}</p>,
+    [BLOCKS.PARAGRAPH]: (node, children) => {
+      if ((typeof children[0] === 'string' || children[0] instanceof String) && children[0].indexOf("<iframe") !== -1) {
+        // hack - set the inner div html with the iframe html.
+        return (
+          <div className="flex justify-center pt-8" dangerouslySetInnerHTML={{__html:children[0],}}></div>
+        )
+      } else {
+        return(
+          <p className='pb-5'>{children}</p>
+        )
+      }
+    },
     [BLOCKS.HEADING_1]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
     [BLOCKS.HEADING_2]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,
     [BLOCKS.HEADING_3]: (node, children) => <h2 className='text-xl leading-tight font-semibold tracking-tight sm:text-2xl pt-5'>{children}</h2>,

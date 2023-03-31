@@ -10,7 +10,7 @@ const Card = props => {
   return (
     <div className="bg-white h-full shadow-sm rounded-md overflow-hidden group">
       <Link to={`/${slug}`}>
-        <div className="group-hover:opacity-75 transition duration-150 ease-in-out">
+        <div className="group-hover:opacity-75 transition duration-150 ease-in-out filter-img">
           <Img fluid={thumbnail.localFile.childImageSharp.fluid} alt={title} />
         </div>
         <div className="p-4 sm:p-5">

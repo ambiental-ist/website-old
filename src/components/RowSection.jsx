@@ -11,7 +11,7 @@ const RowSection = ({ title, thumbnail, type, summary, slug, isBackgroundGray })
     <div className={`${ isBackgroundGray ? "bg-gray-100" : "bg-gray-0" }`}>
       <div className="container py-12 lg:pb-16">
         <div className="flex flex-wrap">
-          <div className="w-full lg:w-2/3 pb-8">
+          <div className="w-full lg:w-2/3 pb-8 filter-img">
             <Img fluid={thumbnail.localFile.childImageSharp.fluid} alt={title} />
           </div>
           <div className="w-full lg:w-1/3 lg:pl-8 xl:pl-12">

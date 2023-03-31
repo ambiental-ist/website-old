@@ -34,11 +34,11 @@ export default props => {
       <div className="bg-gray-100 py-12 lg:py-16">
         <div className="container">
           <div className="flex flex-wrap">
-            <div className="w-full lg:w-2/3 pb-8">
-                <Img
-                    fluid={thumbnail.localFile.childImageSharp.fluid}
-                    alt={title}
-                />
+            <div className="w-full lg:w-2/3 pb-8 filter-img">
+              <Img
+                  fluid={thumbnail.localFile.childImageSharp.fluid}
+                  alt={title}
+              />
             </div>
             <div className="w-full lg:w-1/3 lg:pl-8 xl:pl-12">
               <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-800 sm:text-4xl mb-1">
@@ -51,7 +51,7 @@ export default props => {
               }
               {author ? (
                 <h5 className="mt-1 text-sm leading-tight tracking-tight text-gray-600">
-                  {author} · {date}
+                  {date} · {author} 
                 </h5>
               ) : (
                 <h5 className="mt-1 text-sm leading-tight tracking-tight text-gray-600">
@@ -130,6 +130,7 @@ export const query = graphql`
           }
       }
       summary
+      author
       type
       text {
         raw
