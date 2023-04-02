@@ -1,66 +1,33 @@
-# Portfolio theme for Gatsby
+# Website do AmbientalIST
 
-### Gatsby starter theme integrated with [Contentful](https://www.contentful.com)
+Este repositório contém os ficheiros necessários para a compilação do website do AmbientalIST (https://ambientalist.tecnico.ulisboa.pt). Excetuam-se os artigos, os quais são baixados pelo developer para o repositório clonado.
 
-## Demo
+## Como funciona?
 
-Live demo is available at:
-https://gatsby-contentful-portfolio.netlify.com/
+**Nota:** Este guia aplica-se a sistemas operativos Linux.
 
-## Screenshot
+O conteúdo dos artigos está guardado numa conta do [Contentful](https://app.contentful.com). Por isso, para além de clonar este repositório, o utilizador com acesso à conta deverá utilizar dois pacotes para ter acesso à versão de trabalho do site.
 
-![The home page](screenshot.png?raw=true)
+O primeiro é o `npm`, instalado pela via normal.
 
-## Who is this for?
+Em seguida, instalar o Gatsby, correndo o comando:
 
-- Graphic designers
-- Photographers
-- Illustrators
-- Other creatives
+`sudo npm install -g gatsby-cli@3.14.2`
 
-## Features
+Esta é a última versão conhecida do `gatsby-cli` que não dá problemas, dentro do nosso conhecimento.
 
-- Integration with [Contentful](https://www.contentful.com) - automated content model & demo setup
-- Responsive/adaptive images via [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/)
-- Uses utility-first [TailwindCSS](https://tailwindcss.com/) framework
-- Integration with [Mailchimp](https://mailchimp.com/) - newsletter form
-- Responsive design (desktop / mobile)
+Depois, na pasta deste repositório clonado, correr os comandos
 
-## Getting started
+`npm install`
 
-Install [Node package manager (NPM)](https://nodejs.org/) (if you haven't already).
+`npm run setup`
 
-## Requirements
+E inserir as chaves do Contentful pedidas pelo segundo, de modo a gerar o ficheiro `.env`. Este ficheiro permitirá fazer download do conteúdo para uma nova subpasta, `public`. As chaves encontram-se disponíveis na página do website na webapp do Contentful, em Settings -> API Keys. Por óbvios motivos de segurança, o `.env` está listado no `.gitignore`.
 
-To use this project you have to have a Contentful account. If you don't have one yet you can register at [www.contentful.com/sign-up](https://www.contentful.com/sign-up/).
+Finalmente, fazer o download do conteúdo com o seguinte comando:
 
-### Get the source code and install dependencies.
+`gatsby develop`
 
-```
-$ git clone git@github.com:wkocjan/gatsby-contentful-portfolio.git
-$ npm install
-```
+A subpasta `public` passará a estar disponível, e pronta a ser posta no servidor, com o site a ser assim atualizado.
 
-### Set up of the needed content model and create a configuration file
-
-This project comes with a Contentful setup command `npm run setup`.
-
-This command will ask you for a space ID, and access tokens for the Contentful Management and Delivery API and then import the needed content model into the space you define and write a config file (`.env`).
-
-### Set up Mailchimp
-
-If you want to use built-in integration with Mailchimp, please provide your unique endpoind URL in the `.env` file (`MAILCHIMP_ENDPOINT` variable).
-
-Follow [this instruction](https://www.gatsbyjs.org/packages/gatsby-plugin-mailchimp/?=mailchimp#mailchimp-endpoint) to get the endpoint value.
-
-## Crucial Commands
-
-This project comes with a few handy commands for linting and code fixing. The most important ones are the ones to develop and ship code. You can find the most important commands below.
-
-#### `gatsby develop`
-
-Run in the project locally.
-
-#### `gatsby build`
-
-Run a production build into `./public`. The result is ready to be put on any static hosting you prefer.
+Como extra, enquanto o processo relativo a este último comando estiver a correr depois da compilação, o site estará disponível para pré-visualização no `localhost:8000`.
