@@ -2,7 +2,7 @@
 
 Este repositório contém os ficheiros necessários para a compilação do website do AmbientalIST (https://ambientalist.tecnico.ulisboa.pt). Excetuam-se os artigos, os quais são baixados pelo developer para o repositório clonado.
 
-## Como funciona?
+## Gerar o site
 
 **Nota:** Este guia aplica-se a sistemas operativos Linux.
 
@@ -31,3 +31,11 @@ Finalmente, fazer o download do conteúdo com o seguinte comando:
 A subpasta `public` passará a estar disponível, e pronta a ser posta no servidor, com o site a ser assim atualizado.
 
 Como extra, enquanto o processo relativo a este último comando estiver a correr depois da compilação, o site estará disponível para pré-visualização no `localhost:8000`.
+
+## Publicar o site
+
+O site em si encontra-se hospedado no domínio do IST, no cluster [Sigma](https://si.tecnico.ulisboa.pt/servicos/servidores-e-dados/unix-shell/acesso-ao-cluster-sigma/). Após ativação do serviço AFS na [página de self-service dos Serviços de Informática](https://ciist.ist.utl.pt/ciistadmin/user/), o utilizador pode ser adicionado ao grupo AFS do ambientalist, assim ganhando administração da página. Bastará então copiar os conteúdos da pasta `public` gerada na secção anterior para a pasta `web` do grupo `ambientalist` por SSH:
+
+`scp public/* istXXXXXX@sigma.ist.utl.pt:/afs/ist.utl.pt/groups/ambientalist/web`
+
+Tendo o cuidado de iniciar uma sessão SSH para apagar ficheiros já não usados se tal for o caso.
