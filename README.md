@@ -40,6 +40,6 @@ A subpasta gerada `public` ficará então pronta para ser colocada no servidor.
 
 O site em si encontra-se hospedado no domínio do IST, no cluster [Sigma](https://si.tecnico.ulisboa.pt/servicos/servidores-e-dados/unix-shell/acesso-ao-cluster-sigma/). Após ativação do serviço AFS na [página de self-service dos Serviços de Informática](https://ciist.ist.utl.pt/ciistadmin/user/), o utilizador pode ser adicionado ao grupo AFS do AmbientalIST, assim ganhando administração da página. Bastará então copiar os conteúdos da pasta `public` gerada na secção anterior para a pasta `web` do grupo `ambientalist` por SSH:
 
-`scp public/* istXXXXXX@sigma.ist.utl.pt:/afs/ist.utl.pt/groups/ambientalist/web`
+`scp -r public/* istXXXXXX@sigma.ist.utl.pt:/afs/ist.utl.pt/groups/ambientalist/web`
 
 Tendo o cuidado de iniciar uma sessão SSH para apagar ficheiros já não usados se tal for o caso.
